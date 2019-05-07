@@ -1,3 +1,22 @@
+---
+title: Tipos de Modelos
+subtitle: Cuales son los Tipos de modelos
+summary: LRevisamos los tipos de modelos
+authors:
+- admin
+categories: ["R"]
+tags: ["R", "Time Series", "Analytics"]
+date: "2019-02-05T00:00:00Z"
+featured: false
+draft: false
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: ""
+  focal_point: ""
+---
+
 Tipos de Problemas
 ==================
 

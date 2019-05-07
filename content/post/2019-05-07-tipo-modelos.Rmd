@@ -1,12 +1,12 @@
 ---
-title: "Tipo Modelos"
-author: "Romy Rodriguez-Ravines"
+title: 'Tipos de Modelos'
+subtitle: 'Cuales son los Tipos de modelos:rocket:'
+summary: Revisamos los tipos de modelos.
+authors:
+- admin
 date: 2018-01-01
 output:
-  html_document:
-    mathjax: default
-    self_contained: yes
-    toc: no
+  md_document
 categories: ["R"]
 tags: ["R", "Time Series", "Analytics"]
 ---
