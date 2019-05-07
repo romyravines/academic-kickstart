@@ -10,19 +10,20 @@ authors:
 superuser: true
 
 # Role/position
-role: Líder Técnico
+role: Technical Leader
 
 # Organizations/Affiliations
 organizations:
-- name: Statistics and Machine Learning
+- name: Statistics & Machine Learning
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Machine Learning & Inteligencia Artificial
-- Estadística & Econometría
+- Machine Learning & IA
+- Estadística
+- Econometría
 - Infoque Bayesiano
 
 education:
@@ -47,7 +48,7 @@ social:
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/RomyRavines
+  link: https://twitter.com/RavinesRomy
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -70,6 +71,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y organizaciones a extraer conocimiento útil de su datos. Mi formación estadística, con enfoque bayesiano, y mi trabajo con machine learning me han permitido tener facilidad para entender y modelizar datos con una visión doble: hypothesis-driven y data-driven.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+He tenido la oportunidad de trabajar con líderes en consultoría, de los cuales aprendi habilidades de comunicación. Ahora desempeño labores de formación de equipos.  
