@@ -1,20 +1,22 @@
 ---
 title: Interpretando ML
+author: Romy Rodriguez-Ravines
+date: '2019-02-05'
+categories:
+  - R
+tags:
+  - Analytics
+  - Machine Learning
+  - R
 subtitle: ¿Los modelos ML pueden ser cajas blancas?
 summary: Opciones para interpretar los resultados de algoritmos de Machine Learning
 authors:
-- admin
-categories: ["R"]
-tags: ["R", "Machine Learning", "Analytics"]
-date: "2019-02-05T00:00:00Z"
-featured: true
-draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+  - admin
+featured: yes
+draft: no
 image:
-  caption: ""
-  focal_point: ""
+  caption: ''
+  focal_point: ''
 ---
 
 

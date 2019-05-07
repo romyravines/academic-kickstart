@@ -14,11 +14,11 @@ role: Technical Leader
 
 # Organizations/Affiliations
 organizations:
-- name: Statistics & Machine Learning
+- name: Statistics + Machine Learning
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+Tengo pasión por la Ciencia de Datos: Entender, Modelizar, Predecir = Aprender y extraer valor para personas y organizaciones.
 
 interests:
 - Machine Learning & IA
