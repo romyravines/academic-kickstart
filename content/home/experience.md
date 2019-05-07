@@ -18,27 +18,35 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "Advanced Analytics Senior Manager"
+  company = "Innova-tsn"
+  company_url = "https://www.innova-tsn.com/"
+  location = "Madrid"
+  date_start = "2017-10-23"
   date_end = ""
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Lider Técnico en Analítica Avanzada
+  * Desarrollo de Negocio en el ámbito de Analítica Avanzada
+  * Diseño de soluciones end-to-end
+  * Colaboración con Marketing y Comunicación
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Modelling Director"
+  company = "Bayes Forecast"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
-
+  location = "Madrid"
+  date_start = "2008-01-01"
+  date_end = "2017-08-31"
+  description = """
+  Responsibilities include:
+  
+  * Lider Técnico en Modelos Dinámicos Bayesianos
+  * Desarrollo de Negocio en el ámbito de Ciencia de Datos
+  * Dirección académica de la Escuela Bayes
+  * Dirección de Calidad y Comunicación
+  """  
+  
 +++
