@@ -6,7 +6,7 @@ authors:
 - admin
 categories: ["R"]
 tags: ["R", "Time Series", "Analytics"]
-date: "2019-01-05"
+date: "2019-01-05T00:00:00Z"
 featured: true
 draft: false
 

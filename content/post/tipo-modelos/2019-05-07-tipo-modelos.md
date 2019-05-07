@@ -1,7 +1,7 @@
 ---
 title: Tipos de Modelos
 subtitle: Cuales son los Tipos de modelos
-summary: LRevisamos los tipos de modelos
+summary: Revisamos los tipos de modelos
 authors:
 - admin
 categories: ["R"]
