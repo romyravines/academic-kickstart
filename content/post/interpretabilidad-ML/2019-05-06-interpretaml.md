@@ -1,4 +1,4 @@
-+++
+---
 title: Interpretando ML
 subtitle: ¿Los modelos ML pueden ser cajas blancas?
 summary: Opciones para interpretar los resultados de algoritmos de Machine Learning
@@ -15,7 +15,7 @@ draft: false
 image:
   caption: ""
   focal_point: ""
-+++
+---
 
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
