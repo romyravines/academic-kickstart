@@ -5,7 +5,7 @@ summary: Revisamos los tipos de modelos
 authors:
 - admin
 categories: ["R"]
-tags: ["R", "Time Series", "Analytics"]
+tags: ["R", "Modelos", "Analytics"]
 date: "2019-02-05T00:00:00Z"
 featured: false
 draft: false
