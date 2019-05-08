@@ -1,0 +1,388 @@
+---
+title: "Inventarios"
+author: "Romy Rodriguez-Ravines"
+date: 2019-02-10
+output:
+  html_document:
+    mathjax: default
+    self_contained: yes
+    toc: no
+categories: ["R"]
+tags: ["R", "Time Series", "Analytics"]
+---
+
+<head>
+<!-- use the font -->
+  <style type='text/css'>
+    body {font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 12px;
+    color: #9d9fa;}
+    td { font-size: 16px;}
+    h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  font-size: 34px; color: #07077e;}
+    h2 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 30px; color: #004379;}
+    h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 28px; color: #00549a;}
+    h4 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; color: #0069c0;}
+   </style>
+</head>
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE,}
+#options(rcharts.mode = 'iframe', rcharts.cdn = TRUE)
+knitr::opts_chunk$set(results = "asis", comment = F,echo = TRUE)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
+require(dplyr)
+require(purrr)
+require(highcharter)
+
+bysCol = c("#07077e","#32b4f7","#fda601","#e5e5e5")
+
+```
+
+
+# INVENTORY OPTIMIZATION {.tabset}
+
+> We offers retailers a solution for <b> Inventory Management - based on predictive modelling and optimization - </b> that ensures the right allocation of SKUs per sales point, boosting business results.
+
+
+## Overview
+
+The core of the solution is the <b> demand forecasting </b> for each SKU at a sales point (or store) level, taking into account all the factors that affect product availability, even when the number of store-SKU combinations is huge. 
+
+The analysis of sales at a sales point level ensures the <b> right SKU portfolio for each sales point</b>, according to the customer segment that each sales point serves.
+
+<!-- usar sinonimos (sales point, store, outlet) dificulta mucho la comprension del texto (en español lo embellece pero en inglés se puede ser repetitivo si esto ayuda a la claridad) --> 
+
+Bayes' solution allows to build scenarios of a variety of events that take place in the distribution channel and in the market environment, and see how sales behave in these scenarios. Based on these sales forecasts, the solution makes recommendations on inventory levels by means of the optimization of the cost or profit curves. It also activates orders within the supply chain according to these optimizations.
+
+---
+
+<img src="img/BysInventory.png" alt="Bayes Platform" height="360" width="360" style="float:center;width:80%;">
+
+
+**Core Modules**
+
+ 1. [Valuable and Modellable data](#Data)
+ 1. [Explaing and Forecasting Sales](#Forecasting)
+ 1. [Assessing Costs Functions](#Cost)
+ 1. [Stock Alerts](#Alert)
+ 1. [Promotional Analysis](#Promotions)
+ 1. [Portfolio Pricing](#Price)
+
+
+
+
+---
+
+
+
+
+## Core Modules
+
+ 1. [Valuable and Modellable Data](#Data)
+ 1. [Explaing and Forecasting Sales](#Forecasting)
+ 1. [Assessing Costs Functions](#Cost)
+ 1. [Stock Alerts](#Alert)
+ 1. [Promotional Analysis](#Promotions)
+ 1. [Portfolio Pricing](#Price)
+
+---
+
+### <a name="Data"></a> Valuable and Modellable Data
+
+Bayes' solution uses intrinsically dynamic data from internal and external sources. The set-up uses historical data disaggregated at the level defined in the system. The sales forecast and the optimal inventory are updated periodically with the lastest data. 
+
+> Bayes captures the stocks and the sales from the Client's own systems. In cases of a huge volume of data, the acquisition of information is done through non-intrusive processes in legacy systems that capture and update the information directly, without interfering with the central systems.
+
+The system uses data from different sources:
+
+ * <b>Internal</b> or <b>own data</b>: Sales and Operational data. The solution uses multiple data services to read from the Client's databases (transactions, financials, CRMs,etc).
+
+ - <b>Third-party data</b>: The solution considers the use of databases from syndicated data providers (like Nielsen, IRI, and SPINS) and data sharing sources that provide information about market, categories and competitors. IoT data, Media tracking, and digital data sources can be included.
+ 
+ - <b>External data</b>:  The solution also provides data from public sources about key factors like weather, social calendar, economy trends, and market interest (the latter implies the use of an optional service: b-Market Beat).
+
+
+Once the data is gathered, a validation process is carried out. The process involves a first-stage database, containing the original (raw) data, and a secondary database, where the information is already validated through a diagnosis procedure of anomaly detection, omitted data correction and date harmonization.
+
+
+<img src="img/DataCollection.png" alt="Data Collection" style="float:center;width:80%;">
+
+In summary, Bayes' solution:
+
+<font size="5"; color=#32b4f7>Deals</font> with:
+
+ * Standard and disparate data sources
+ * Any level of granularity
+ * Any time frequency
+ 
+<font size="5"; color=#32b4f7>Enables </font> to:
+
+ * Work with multiple data hierarchies, including aggregation at different levels
+ * Validate all data inputs, from different sources
+ * Cleanse data via a data audit aligned with different business departments
+ * Process
+ * Integrate 
+
+
+<font size="5"; color=#32b4f7>Delivers</font>:
+
+ * Comprehensive and consistent database
+ * Harmonized and centralized data
+ * *Modellable* business indicators
+ * Business insights in executive reports and online dashboards
+ * Automation of the data flow
+
+
+<br>
+
+---
+
+### <a name="Forecasting"></a> Explaining and Forecasting Sales
+
+> The Sales Forecasting module has <font color=#32b4f7>predictive models in different time frequencies</font> (daily, weekly, monthly, etc.) according to the product's rotation rate. The analysis is performed at an SKU and salespoint-SKU level in order to assist the provision not only of sales points but also of logistic centers.
+
+
+> The <font color=#32b4f7>complexity of the models</font> varies depending on their use: from simple models that only take into account the inertia of each one of the references (SKUs) per store, to more sophisticated models that include the effect of promotions and the occasional physical or technological expiration of each SKU.
+
+<br>
+
+```{r,echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results='asis'}
+hc <- highchart() %>% 
+  hc_plotOptions(
+    series = list(
+      boderWidth = 0,
+      showInLegend = FALSE,
+      dataLabels = list(enabled = FALSE)
+    )
+  ) %>%
+  hc_title(text="Explaining Sales Variation between Period A and Period B") %>% 
+  hc_chart(type = "waterfall", width=120, height=20) %>% 
+  hc_yAxis(title = list(text = "Units"), 
+           plotBands = list(
+                        list(from = 2008519, to = 2433589, 
+                             color = "rgba(100, 0, 0, 0.1)",
+                            label = list(text = ".")))) %>% 
+  hc_xAxis(type = "category") %>% 
+  hc_add_series(
+      name = "Main",
+      data = list(
+        list(name = "Period A", y = 2008519, p=100.0, drilldown = NULL),
+        list(name = "Own Actions", y = 1590011, p=79.2,drilldown = tolower("Own"),color="#32b4f7"),
+        list(name = "Competitors", y = -984174, p=-49.0, drilldown = tolower("Competitors"),color="#fda601"),  
+        list(name = "Context", y = -180767, p=-9.0, drilldown = tolower("Context"),color="#51bbbc"), 
+        list(name = "Period B", y = -2433589, p=121.2, drilldown = NULL)
+                  )
+      )%>%
+  hc_add_series(
+        name = "Sales",
+        data = list(
+          list(name = "Period A", y = 2008519, p=100.0,  drilldown = NULL, color="#07077e"),
+          list(name = "Own Actions", y = NA, drilldown = tolower("Own")),
+          list(name = "Competitors", y = NA, drilldown = tolower("Competitors")), 
+          list(name = "Context", y = NA, drilldown = tolower("Context")), 
+          list(name = "Period B", y = 2433589, p=121.2, drilldown = NULL, color="#07077e")
+        ),
+        type="column",dataLabels = list(enabled = TRUE)
+  )%>%
+  hc_tooltip(
+  pointFormat = '{series.name}: <b>{point.y}</b> ({point.p:.1f}%)<br/>') 
+
+hc <- hc %>% 
+  hc_drilldown(
+    series = list(
+      list(
+        id  = "own",
+        name = "Own actions",
+        data = list(
+          list(name = "TV Adv", y = 766518),
+          list(name = "Promotions", y = 343738),
+          list(name = "Price", y = 184356),
+          list(name = "NonTV Adv", y = 80341)
+                  )
+        ),
+      list(
+        id = "competitors",
+        name = "Competitors actions",
+        data = list(
+          list(name = "Competitor 1", y = -321363),
+          list(name = "Competitor 2", y = -662811)       
+                  )
+      ),
+      list(
+        id  = "context",
+        name = "Context",
+        data = list(
+          list(name = "Calendar", y = 160682),
+          list(name = "Others", y = 40170),
+          list(name = "Temperature", y = -60256),
+          list(name = "Rainfall", y = -180767),
+          list(name = "Economy", y = -140596)
+          )
+        )
+    )
+  )%>%
+hc_credits(enabled = TRUE, # add credits
+             text = "By Bayes Forecast",
+             href = "http://www.bayesforecast.com/", 
+             style = list(fontSize = "10px"))
+hc
+
+```
+
+<br>
+
+---
+
+### <a name="Cost"></a> Assessing Costs Functions
+
+> Depending on the category or nature of each reference, its cost, the number of existing substitutes and the intensity of competition, the reference has a cost function that relates the <font color=#32b4f7>cost of absence of service - failing to provide something that a customer is looking for - with the <font color=#32b4f7>cost of immobilized</font> - offering products that are not sold -.</font> 
+
+
+The relative cost (cost of absence of service vs cost of immobilized) determines the desired probability of absence of service, which in general must be very low. This probability, in turn, regulates the desired stock level according to the expected demand on a daily basis.
+<!-- Carmen: revisado hasta aquí -->
+
+
+<br>
+
+---
+
+### <a name="Alert"></a> Alerts
+
+> For example, in Retail it is common the situation where the level of stock is not controlled in a daily basis. In some cases, the merchandise may have disappeared without any register (or data) of this disappearance. The ability to detect this type of situation through the <font color=#32b4f7>analysis of anomalous sales</font> is one of the skills of Bayes solution.
+
+<br>
+
+---
+
+### <a name="Promotions"></a> Promotional Analysis
+
+> An important feature of Bayes solution is its ability to deal with promotions from the point of view of supply or procurement. This requires the calculation of the <font color=#32b4f7>promotional price elasticity</font> that is usually different from the regular price elasticity.
+
+Due to the inclusion of this feature, Bayes solution provides robust estimatives of provision (supply) before, during and after promotions.
+
+This module also contains the evaluation of the cross-effects of promotions in substitute or complementary products that modify their volume sale.
+
+<br>
+
+---
+
+### <a name="Price"></a> Portfolio Pricing
+
+
+> One  the most important characteristics of Bayes solution is the ability to take into account the <font color=#32b4f7>degree of physical or technological expiration</font> that impacts on price elasticity, increasing it in an important way. The system measures these changes in elasticity and it is able to suggest adequate prices to eliminate the losses caused by this route.
+
+
+
+
+
+
+
+## Learn more
+
+<br>
+
+### Case Studies
+
+
+#### Bookstore in Brazil
+
+Major chain of bookstores in Latinamerica with more than 4 millions references in their portfolio.
+The required a system skilled to identify the weekly sales volume, and its probability fuction, of each reference per bookstore.
+
+
+#### Supermarket in Spain
+
+One of the bigger supermarket chain
+
+
+
+
+<br>
+
+---
+
+
+
+### Bayes Platform
+
+**b-Platform** is a front end that empowers companies to operate the forecasting system. With **b-Platform**, capabilities for scenario planning and optimization are increased, allowing for more realistic analysis and recomendations.
+
+The basic version is composed by:
+
+ * Database access module
+ * Model Explorer
+ * Scenario Simulator
+ * Business Optimizer
+
+**b-Platform** is aflexible and customisable front end. Additional functionalities to the default ones can be added.
+
+<br>
+
+<img src="img/LookAndFeel.png" alt="Bayes Platform" height="360" width="360" style="float:center;width:100%;">
+
+<br>
+
+```{r,echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results='asis'}
+
+hc <- highchart() %>% 
+  hc_plotOptions(
+    series = list(boderWidth = 0,
+                  showInLegend = FALSE)
+  ) %>% 
+  hc_title(text="Explaining Sales Variation") %>% 
+  hc_chart(type = "waterfall") %>% 
+  hc_yAxis(title = list(text = "Units")) %>% 
+  hc_xAxis(type = "category") %>% 
+  hc_add_series(
+    name = "Sales",
+    data = list(
+      list(name = "Period A", y = 2008519, color="#07077e"),
+      list(name = "Period A", color="#07077e",isIntermediateSum = T),
+      list(name = "TV Adv", y = 766518,color="#32b4f7"),
+      list(name = "NonTV Adv", y = 100426,color="#32b4f7"),
+      list(name = "Promotions", y = 482045,color="#32b4f7"),
+      list(name = "Price", y = 241022,color="#32b4f7"),
+      list(name = "OWN ACTIONS", color="#e5e5e5",isIntermediateSum = T),
+      list(name = "Competitor 1", y = -321363,color="#fda601"),
+      list(name = "Competitor 2", y = -662811,color="#fda601"),      
+      list(name = "COMPETITORS",color="#e5e5e5",isIntermediateSum = T),
+      list(name = "Others", y = 40170,color="#32b4f7"),
+      list(name = "Calendar", y = 160682,color="#32b4f7"),
+      list(name = "Temperature", y = -60256,color="#fda601"),
+      list(name = "Economy", y = -140596,color="#fda601"),
+      list(name = "Rainfall", y = -180767,color="#fda601"),
+      list(name = "CONTEXT",color="#e5e5e5",isIntermediateSum = T),
+      list(name = "Period B", y = 2433589, color="#07077e", isSum = T)
+    ),
+    dataLabels = list(enabled = FALSE)
+  )%>%
+hc_credits(enabled = TRUE, # add credits
+             text = "By Bayes Forecast",
+             href = "http://www.bayesforecast.com/", 
+             style = list(fontSize = "10px"))
+
+hc
+
+```
+
+
+## About Bayes Forecast
+
+
+### Bayes is devoted to modelling, forecasting and optimization for decision-making 
+
+
+Bayes is present in the market of predictive analytics since 1991. We believe that modelling is a strategic tool to create corporation intelligence. That is, the adoption of the <b>modelling strategy produce increasing competitive advantages </b> to the companies. Therefore, our mision is to support our Clients' model-based management.
+
+Bayes' modelling approach is being sucessfully applied in many business areas (Telecom, Banking, Retail, FMCG, Utilities, etc.) an it is used to make decisions about a wide variety of business problems in more than 40 countries.
+
+<br>
+
+
+### Bayes footprint
+
+
+<b>Modelling is a learning process controlled by the data</b> in which the available information, either theoretical or derived from the experience of managers, is used as the starting point for the process. An adequate modelling process implies the correct use of available information and no misleading insights. The learning process is an iterative sequence: conjectures, formalization, estimation and diagnostic checks, and then back to conjetures to cope with flaws. Once the model is deemed adequate for forecasting and able to support decision processes, it becomes operational.
+
+<img src='img/ModellingProcess.png' alt=" " style="width:100%;">

@@ -1,0 +1,25 @@
+---
+title: "Series Temporales"
+author: "Romy Rodriguez-Ravines"
+date: 2019-01-10
+categories: ["R"]
+tags: ["R", "Time Series", "Analytics"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# Modelos de Series Temporales
+
+<br>
+
+## Series Temporales
+
+### ¿Qué es una Serie Temporal?
+
+Una **serie temporal** es una secuencia de datos, medidos a intervalos de tiempo sucesivos regularmente espaciados.
+
+Ejemplos de series temporales son: tasas de interés mensuales, cantidad de lluvia anual, tasa de desempleo mensual, PIB anual, ondas cardíacas, etc.
+
+<br>
