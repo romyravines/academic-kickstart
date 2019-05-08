@@ -11,27 +11,7 @@ categories: ["R"]
 tags: ["R", "Machine Learning", "Analytics", "Interpretability"]
 ---
 
-<head>
-<!-- use the font -->
-  <style type='text/css'>
-    body {font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 12px;
-    color: #9d9fa;}
-    td { font-size: 16px;}
-    h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  font-size: 34px; color: #07077e;}
-    h2 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 30px; color: #004379;}
-    h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 28px; color: #00549a;}
-    h4 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; color: #0069c0;}
-   </style>
-</head>
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
-if (!require(knitr)) install.packages('knitr', repos = c('https://xran.yihui.name', 'https://cran.rstudio.org'))
-library(knitr)    # For knitting document and include_graphics function
-if (!require(png)) install.packages('png')
-library(png)      # For grabbing the dimensions of png files
-imgs_path = "img/"
-```
 
 ## Interpretando Modelos de Machine Learning
 
@@ -43,7 +23,7 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
 
-<img src='interpretaML/booklet01.png' alt=" " style="width:90%;">
+<img src='booklet01.png' alt=" " style="width:90%;">
 
 
 ### Alcance (Scope) de la Interpretación
@@ -54,7 +34,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
-<img src='interpretaML/booklet02.png' alt=" " style="width:80%;">
+<img src='booklet02.png' alt=" " style="width:80%;">
 
 
 ### Herramientas
@@ -111,10 +91,10 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
 
-<img src='interpretaML/cluster1.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster3.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster10.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster15.png' alt=" " style="width:40%;">
+<img src='cluster1.png' alt=" " style="width:40%;">
+<img src='cluster3.png' alt=" " style="width:40%;">
+<img src='cluster10.png' alt=" " style="width:40%;">
+<img src='cluster15.png' alt=" " style="width:40%;">
 
 
 
@@ -127,8 +107,8 @@ Para facilitar la interpretación de resultados, se recomienda utilizar un model
 
 
 
-<img src='interpretaML/booklet04.png' alt=" " style="width:40%;">
-<img src='interpretaML/booklet03.png' alt=" " style="width:60%;">
+<img src='booklet04.png' alt=" " style="width:40%;">
+<img src='booklet03.png' alt=" " style="width:60%;">
 
 
 
