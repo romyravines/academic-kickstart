@@ -13,19 +13,6 @@ tags: ["R", "Machine Learning", "Analytics", "Interpretability"]
 
 
 
-<head>
-<!-- use the font -->
-<style type='text/css'>
-    body {font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 12px;
-    color: #9d9fa;}
-    td { font-size: 16px;}
-    h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  font-size: 34px; color: #07077e;}
-    h2 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 30px; color: #004379;}
-    h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 28px; color: #00549a;}
-    h4 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; color: #0069c0;}
-   </style>
-</head>
 <div id="interpretando-modelos-de-machine-learning" class="section level2">
 <h2>Interpretando Modelos de Machine Learning</h2>
 <blockquote>
@@ -33,7 +20,7 @@ tags: ["R", "Machine Learning", "Analytics", "Interpretability"]
 </blockquote>
 <p>Los modelos de Machine learning son conocidos por su alto poder predictivo, pero no por la facilidad de interpretación de sus resultados. Una regresión logística es un ejemplo modelo interpretable. Un modelo de <em>gradient boosting machine</em> o <em>gbm</em> es un ejemplo donde la interpretación no es trivial. Dada la importancia que tiene, desde la perspectiva de la toma de decisiones de negocio, explicar porque se considera que un cliente va a darse de baja o va a presentar una reclamación, hay un creciente número de publicaciones donde se presentan alternativas para abordar este tema.</p>
 <p>La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.</p>
-<p><img src='interpretaML/booklet01.png' alt=" " style="width:90%;"></p>
+<p><img src='booklet01.png' alt=" " style="width:90%;"></p>
 <div id="alcance-scope-de-la-interpretacion" class="section level3">
 <h3>Alcance (Scope) de la Interpretación</h3>
 <p>La interpretación de los modelos se puede realizar con dos perspectivas:</p>
@@ -41,7 +28,7 @@ tags: ["R", "Machine Learning", "Analytics", "Interpretability"]
 <li><p>Interpretación <strong>GLOBAL</strong>. Permite explicar la interacción entre la variable respuesta (<em>target</em>) y las variables explicativas (<em>features</em>) utilizando el <strong>conjunto de datos completo</strong>.</p></li>
 <li><p>Interpretación <strong>LOCAL</strong>. Permite explicar la interacción entre la variable respuesta (<em>target</em>) y las variables explicativas (<em>features</em>) para una única observación o <strong>individuo</strong>.</p></li>
 </ol>
-<p><img src='interpretaML/booklet02.png' alt=" " style="width:80%;"></p>
+<p><img src='booklet02.png' alt=" " style="width:80%;"></p>
 </div>
 <div id="herramientas" class="section level3">
 <h3>Herramientas</h3>
@@ -87,17 +74,17 @@ tags: ["R", "Machine Learning", "Analytics", "Interpretability"]
 <li>Proporcionar una buena aproximación a la interpretación de la previsión individual de todos los clientes.</li>
 <li>Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.</li>
 </ol>
-<p><img src='interpretaML/cluster1.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster3.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster10.png' alt=" " style="width:40%;">
-<img src='interpretaML/cluster15.png' alt=" " style="width:40%;"></p>
+<p><img src='cluster1.png' alt=" " style="width:40%;">
+<img src='cluster3.png' alt=" " style="width:40%;">
+<img src='cluster10.png' alt=" " style="width:40%;">
+<img src='cluster15.png' alt=" " style="width:40%;"></p>
 </div>
 <div id="procedimiento-con-xgboostexplainer" class="section level3">
 <h3>Procedimiento con xgboostExplainer</h3>
 <p>Esta opción es computacionalmente menos costosa y permite aproximar la interpretación de todas las previsiones de un lote de, por ejemplo, 7000 clientes en minutos. Además de ofrecer el peso de cada característica en cada previsión individual, ofrece un presentación gráfica muy similar a la proporcionada por DALEX.</p>
 <p>Para facilitar la interpretación de resultados, se recomienda utilizar un modelo simplificado donde participen las variables que conttribuyan con, por ejemplo, el 75% del gain del modelo.</p>
-<p><img src='interpretaML/booklet04.png' alt=" " style="width:40%;">
-<img src='interpretaML/booklet03.png' alt=" " style="width:60%;"></p>
+<p><img src='booklet04.png' alt=" " style="width:40%;">
+<img src='booklet03.png' alt=" " style="width:60%;"></p>
 <p>Nota: Algunos recomiendan usar directamente la funición predict del xgboost con la opcion contrib=TRUE antes que las funciones del XGBoostExplainer. (ver aqui<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>)</p>
 <div id="ejemplo" class="section level4">
 <h4>Ejemplo</h4>
