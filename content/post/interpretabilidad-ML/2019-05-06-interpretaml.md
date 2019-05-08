@@ -38,7 +38,7 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
 
-<img src='/img/booklet01.png' alt=" " style="width:90%;">
+<img src='interpretabilidad-ML/booklet01.png' alt=" " style="width:90%;">
 
 
 ### Alcance (Scope) de la Interpretación
@@ -49,7 +49,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
-<img src='/img/booklet02.png' alt=" " style="width:80%;">
+<img src='interpretabilidad-ML/booklet02.png' alt=" " style="width:80%;">
 
 
 ### Herramientas
@@ -106,10 +106,10 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
 
-<img src='/img/cluster1.png' alt=" " style="width:40%;">
-<img src='/img/cluster3.png' alt=" " style="width:40%;">
-<img src='/img/cluster10.png' alt=" " style="width:40%;">
-<img src='/img/cluster15.png' alt=" " style="width:40%;">
+<img src='interpretabilidad-ML/cluster1.png' alt=" " style="width:40%;">
+<img src='interpretabilidad-ML/cluster3.png' alt=" " style="width:40%;">
+<img src='interpretabilidad-ML/cluster10.png' alt=" " style="width:40%;">
+<img src='interpretabilidad-ML/cluster15.png' alt=" " style="width:40%;">
 
 
 
@@ -122,8 +122,8 @@ Para facilitar la interpretación de resultados, se recomienda utilizar un model
 
 
 
-<img src='/img/booklet04.png' alt=" " style="width:40%;">
-<img src='/img/booklet03.png' alt=" " style="width:60%;">
+<img src='interpretabilidad-ML/booklet04.png' alt=" " style="width:40%;">
+<img src='interpretabilidad-ML/booklet03.png' alt=" " style="width:60%;">
 
 
 
