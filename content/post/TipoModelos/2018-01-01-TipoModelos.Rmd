@@ -14,25 +14,8 @@ tags: ["R", "Time Series", "Analytics"]
 
 # Tipos de Problemas
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
-if (!require(knitr)) install.packages('knitr', repos = c('https://xran.yihui.name', 'https://cran.rstudio.org'))
-library(knitr)    # For knitting document and include_graphics function
-if (!require(png)) install.packages('png')
-library(png)      # For grabbing the dimensions of png files
-imgs_path = "imgs/"
-```
 
-<!-- ## Problemas Supervisados vs. Problemas No Supervisados -->
-
-<!-- Machine learning uses two types of techniques: supervised -->
-<!-- learning, which trains a model on known input and output data so -->
-<!-- that it can predict future outputs, and unsupervised learning, which -->
-<!-- finds hidden patterns or intrinsic structures in input data. -->
-
-```{r  out.width = "90%", echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE}
-img_path =paste(imgs_path,"mlalgorithms01.png",sep="")
-include_graphics(img_path) 
-```
+<img src='/post/2018-01-01-TipoModelos_files/mlalgorithms01.png' alt="" style="float:width:90%;">
 
 En bastante común que los algoritmos de _Machine Learning_ en aprendizaje supervisado y aprendizaje no supervisado. Esta misma clasificación se menciona en la sección \@ref(clasemodelos), las herramientas de _statistical learning_. Este tipo de clasificación responde al tipo de problema e información que disponemos del _output_, por ello, en este Manual generalizamos esta clasificación y la denominamos **Tipo de Problema Analítico** que debemos afrontar.
 
@@ -80,44 +63,6 @@ El aprendizaje supervisado usa técnicas de **clasificación** y **regresión** 
 En el **aprendizaje no supervisado**, los datos no tienen etiquetas asociadas a ellos. En este caso, el objetivo  es organizar los datos de alguna manera o describir su estructura. Esto puede significar agrupar clientes en segmentos, o buscar diferentes maneras de examinar datos complejos para que parezcan más simples.
 
 El aprendizaje no supervisado se utiliza en análisis exploratorio de datos para encontrar características ocultas y agrupar. Las aplicaciones del clustering incluyen análisis de secuencias genéticas, investigación de mercado y reconocimiento de objetos.
-
-
-
-<!-- The aim of **supervised** machine learning is to build a model -->
-<!-- that makes predictions based on evidence in the presence of -->
-<!-- uncertainty. A supervised learning algorithm takes a known set of -->
-<!-- input data and known responses to the data (output) and trains a -->
-<!-- model to generate reasonable predictions for the response -->
-<!-- to new data. -->
-<!-- Supervised learning uses classification and regression techniques -->
-<!-- to develop predictive models. -->
-
-<!--  - Classification techniques predict discrete responses—for -->
-<!-- example, whether an email is genuine or spam, or whether -->
-<!-- a tumor is cancerous or benign. Classification models -->
-<!-- classify input data into categories. Typical applications -->
-<!-- include medical imaging, speech recognition, and -->
-<!-- credit scoring. -->
-
-<!--  - Regression techniques predict continuous responses— -->
-<!-- for example, changes in temperature or fluctuations in -->
-<!-- power demand. Typical applications include -->
-<!-- electricity load forecasting and algorithmic trading. -->
-
-
-
-<!-- El objetivo del machine learning **supervisado** es construir un modelo que haga predicciones basadas en la evidencia en un escenario de incertidumbre. Un algoritmo de aprendizaje supervisado toma un conjunto conocido de entrada y su respuesta para dicha entrada (salida) para entrenar el modelo y generar predicciones razonables de respuesta a nuevos conjuntos de entrada. -->
-
-
-<!-- **Unsupervised learning** finds hidden patterns or intrinsic structures -->
-<!-- in data. It is used to draw inferences from datasets consisting of -->
-<!-- input data without labeled responses. -->
-<!-- Clustering is the most common unsupervised learning -->
-<!-- technique. It is used for exploratory data analysis to find hidden -->
-<!-- patterns or groupings in data. -->
-<!-- Applications for clustering include gene sequence analysis, -->
-<!-- market research, and object recognition. -->
-
 
 ## Enfoques de Modelización {#clasemodelos}
 
@@ -173,9 +118,6 @@ para el aprendizaje.
 El _Machine Learning_ no requiere hipótesis previas sobre las relaciones subyacentes entre las variables (o inputs). Sólo se deben ingresar todos los datos que se diponga, y el algoritmo procesa los datos y descubre patrones, con los cuales puede hacer predicciones sobre el nuevo conjunto de datos. El aprendizaje automático trata un algoritmo como una **black box** (caja negra), siempre que funcione. En otras palabras, su principal objetivo es la previsión.
 
 <br>
-
-
-<!-- In contrast, **statisticians** must understand how the data was collected, statistical properties of the estimator, the underlying distribution of the population they are studying and the kinds of properties you would expect if you did the experiment many times. You need to know precisely what you are doing and come up with parameters that will provide the predictive power.  -->
 
 <div class="info">
 **Modelos Estadísticos**
