@@ -11,20 +11,6 @@ categories: ["R"]
 tags: ["R", "Time Series", "Analytics"]
 ---
 
-<head>
-<!-- use the font -->
-  <style type='text/css'>
-    body {font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 12px;
-    color: #9d9fa;}
-    td { font-size: 16px;}
-    h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  font-size: 34px; color: #07077e;}
-    h2 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 30px; color: #004379;}
-    h3 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 28px; color: #00549a;}
-    h4 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 20px; color: #0069c0;}
-   </style>
-</head>
-
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE,}
 #options(rcharts.mode = 'iframe', rcharts.cdn = TRUE)
 knitr::opts_chunk$set(results = "asis", comment = F,echo = TRUE)
@@ -223,8 +209,8 @@ hc <- hc %>%
     )
   )%>%
 hc_credits(enabled = TRUE, # add credits
-             text = "By Bayes Forecast",
-             href = "http://www.bayesforecast.com/", 
+             text = "By me",
+             href = "", 
              style = list(fontSize = "10px"))
 hc
 

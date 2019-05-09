@@ -40,12 +40,8 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
+<img src='/post/2019-05-06-interpretaml_files/booklet02.png' alt="Model" style="float:width:90%;">
 
-<<<<<<< HEAD
-<img src='https://photos.app.goo.gl/NH6gjAWbe6uMLKn8A' alt="" style="float:width:90%;">
-=======
-<img src="https://drive.google.com/open?id=1wzZaGFtKsvvC8OJ9rAdb1IUmV103rmO3" alt="" width="80%"/>
->>>>>>> 4c0ce9d834030b02877f3753ad95d93c8ab85620
 
 ### Herramientas
 
@@ -100,12 +96,10 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una buena aproximación a la interpretación de la previsión individual de todos los clientes.
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
-
-<img src='https://drive.google.com/open?id=1H_uglOBLVu4iPnrMj5-qirOUOKUMOmPJ' alt=" " style="width:40%;">
-<img src='https://drive.google.com/open?id=1AaNtKLDcJjNTNeNB1shdqv75GQj671G6' alt=" " style="width:40%;">
-<img src='https://drive.google.com/open?id=1pKWY3D6FGm0GnWVdFE_I4k2SAaIKmr9S' alt=" " style="width:40%;">
-<img src='https://drive.google.com/open?id=1cjCmRXBRVCBhP_DHREYlwqqekQZyjqeg' alt=" " style="width:40%;">
-
+<img src='/post/2019-05-06-interpretaml_files/Cluster01.png' alt="Model" style="float:width:90%;">
+<img src='/post/2019-05-06-interpretaml_files/Cluster03.png' alt="Model" style="float:width:90%;">
+<img src='/post/2019-05-06-interpretaml_files/Cluster10.png' alt="Model" style="float:width:90%;">
+<img src='/post/2019-05-06-interpretaml_files/Cluster15.png' alt="Model" style="float:width:90%;">
 
 
 ### Procedimiento con xgboostExplainer
