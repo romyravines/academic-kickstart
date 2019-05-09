@@ -41,7 +41,15 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
+
+(https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png)
+
 <img src="https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png" alt="" width="80%"/>
+
+
+<img src='https://www.edvancer.in/wp-content/uploads/2016/01/ML-vs.-stats1.png' style="float:width:90%;">
+
+<img src='https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png' style="float:width:90%;">
 
 ### Herramientas
 
