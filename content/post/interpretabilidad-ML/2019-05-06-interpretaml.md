@@ -29,8 +29,9 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
+<img src='https://drive.google.com/file/d/1fj0OZAREBrRi7JZeJZlZYzGwIaHQ-HuH/view?usp=sharing' alt="Model" style="float:width:90%;">
 
-<img src="https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet01.png" alt="" width="90%"/>
+<img src='https://drive.google.com/open?id=1fj0OZAREBrRi7JZeJZlZYzGwIaHQ-HuH' alt="" style="float:width:90%;">
 
 
 ### Alcance (Scope) de la Interpretación
@@ -42,14 +43,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
 
-(https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png)
-
-<img src="https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png" alt="" width="80%"/>
-
-
-<img src='https://www.edvancer.in/wp-content/uploads/2016/01/ML-vs.-stats1.png' style="float:width:90%;">
-
-<img src='https://github.com/romyravines/academic-kickstart/blob/master/content/post/interpretabilidad-ML/booklet02.png' style="float:width:90%;">
+<img src="https://drive.google.com/open?id=1wzZaGFtKsvvC8OJ9rAdb1IUmV103rmO3" alt="" width="80%"/>
 
 ### Herramientas
 
@@ -105,10 +99,10 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
 
-<img src='cluster1.png' alt=" " style="width:40%;">
-<img src='cluster3.png' alt=" " style="width:40%;">
-<img src='cluster10.png' alt=" " style="width:40%;">
-<img src='cluster15.png' alt=" " style="width:40%;">
+<img src='https://drive.google.com/open?id=1H_uglOBLVu4iPnrMj5-qirOUOKUMOmPJ' alt=" " style="width:40%;">
+<img src='https://drive.google.com/open?id=1AaNtKLDcJjNTNeNB1shdqv75GQj671G6' alt=" " style="width:40%;">
+<img src='https://drive.google.com/open?id=1pKWY3D6FGm0GnWVdFE_I4k2SAaIKmr9S' alt=" " style="width:40%;">
+<img src='https://drive.google.com/open?id=1cjCmRXBRVCBhP_DHREYlwqqekQZyjqeg' alt=" " style="width:40%;">
 
 
 
