@@ -8,6 +8,7 @@ tags: ["R", "Time Series", "Analytics"]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
+library(plotly)
 ```
 
 # Modelos de Series Temporales
@@ -25,8 +26,6 @@ Ejemplos de series temporales son: tasas de interés mensuales, cantidad de lluv
 <br>
 
 ```{r, comment=FALSE}
-
-library(plotly)
 
 p <- plot_ly(
   x = c("giraffes", "orangutans", "monkeys"),
