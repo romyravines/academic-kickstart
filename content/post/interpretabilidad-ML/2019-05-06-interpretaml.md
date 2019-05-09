@@ -29,8 +29,7 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
-<img src='https://photos.app.goo.gl/fVYC1PbUKQq4Arn49' alt="Model" style="float:width:90%;">
-
+<img src='/post/2019-05-06-interpretaml_files/booklet01.png' alt="Model" style="float:width:90%;">
 
 ### Alcance (Scope) de la Interpretación
 
