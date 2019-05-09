@@ -17,6 +17,10 @@ tags: ["R", "Time Series", "Analytics"]
 
 <img src='/post/2018-01-01-TipoModelos_files/mlalgorithms01.png' alt="" style="float:width:90%;">
 
+
+
+<!-- <img src='/post/2018-01-01-TipoModelos_files/mlalgorithms.png' alt="" style="float:width:90%;">  -->
+
 En bastante común que los algoritmos de _Machine Learning_ en aprendizaje supervisado y aprendizaje no supervisado. Esta misma clasificación se menciona en la sección \@ref(clasemodelos), las herramientas de _statistical learning_. Este tipo de clasificación responde al tipo de problema e información que disponemos del _output_, por ello, en este Manual generalizamos esta clasificación y la denominamos **Tipo de Problema Analítico** que debemos afrontar.
 
 
