@@ -20,14 +20,6 @@ image:
 ---
 
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
-if (!require(knitr)) install.packages('knitr', repos = c('https://xran.yihui.name', 'https://cran.rstudio.org'))
-library(knitr)    # For knitting document and include_graphics function
-if (!require(png)) install.packages('png')
-library(png)      # For grabbing the dimensions of png files
-imgs_path = "img/"
-```
-
 ## Interpretando Modelos de Machine Learning
 
 
@@ -39,6 +31,8 @@ La figura a continuación ilustra las diferencias en cuanto a interpretabilidad 
 
 <img src="/interpretabilidad-ML/2019-05-06-interpretaml_files/booklet01.png" alt="" width="90%"/>
 
+<img src="booklet01.png" alt="" width="90%"/>
+
 
 ### Alcance (Scope) de la Interpretación
 
@@ -48,7 +42,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
-<img src="/interpretabilidad-ML/2019-05-06-interpretaml_files/booklet02.png" alt="" width="80%"/>
+<img src="booklet02.png" alt="" width="80%"/>
 
 ### Herramientas
 
