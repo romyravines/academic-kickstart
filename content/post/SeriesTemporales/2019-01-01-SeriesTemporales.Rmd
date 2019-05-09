@@ -25,7 +25,7 @@ Ejemplos de series temporales son: tasas de interés mensuales, cantidad de lluv
 
 <br>
 
-```{r, comment=FALSE, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE}
 
 p <- plot_ly(
   x = c("giraffes", "orangutans", "monkeys"),
