@@ -23,3 +23,20 @@ Una **serie temporal** es una secuencia de datos, medidos a intervalos de tiempo
 Ejemplos de series temporales son: tasas de interés mensuales, cantidad de lluvia anual, tasa de desempleo mensual, PIB anual, ondas cardíacas, etc.
 
 <br>
+
+```{r, comment=FALSE}
+
+library(plotly)
+
+p <- plot_ly(
+  x = c("giraffes", "orangutans", "monkeys"),
+  y = c(20, 14, 23),
+  name = "SF Zoo",
+  type = "bar"
+)
+
+p
+
+```
+
+
