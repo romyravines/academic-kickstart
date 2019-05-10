@@ -9,27 +9,27 @@
   weight = 10
 
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Píldoras"
+  url = "posts/"
   weight = 20
 
 [[main]]
-  name = "Projects"
+  name = "Stories"
   url = "#projects"
   weight = 30
 
 [[main]]
-  name = "Publications"
+  name = "Publicationes"
   url = "#featured"
   weight = 40
 
-[[main]]
-  name = "Courses"
-  url = "courses/"
-  weight = 50
+#[[main]]
+#  name = "Courses"
+#  url = "courses/"
+#  weight = 50
 
 [[main]]
-  name = "Talks"
+  name = "Ponencias"
   url = "#talks"
   weight = 60
 
