@@ -1,5 +1,5 @@
 ---
-title: BEHAVIOURAL SEGMENTATION FOR CUSTOMER LOYALTY
+title: BEHAVIOURAL SEGMENTATION
 summary: Una segmentación dinámica que sugiere acciones.
 tags: ["Clients", Machine Learning", "Analytics", "Segmentation"]
 categories: ["Marketing","Retail","Clients"]
