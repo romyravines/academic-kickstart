@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Píldoras"
-  url = "#post"
+  url = "#posts"
   weight = 30
 
 [[main]]
