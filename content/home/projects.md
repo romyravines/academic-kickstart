@@ -5,8 +5,8 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
-title = "Stories"
-subtitle = "Aplicaciones reales de Analítica Avanzada"
+title = "Historias"
+subtitle = "Soluciones Reales para Desafíos Reales"
 
 [content]
   # Page type to display. E.g. project.

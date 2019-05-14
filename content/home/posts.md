@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "Píldoras"
-subtitle = "Notas sobre Temas Seleccionados"
+subtitle = "Breves Notas sobre Temas Seleccionados de Estadística y Machine Learning"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

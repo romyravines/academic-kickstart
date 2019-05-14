@@ -11,16 +11,16 @@
 [[main]]
   name = "Píldoras"
   url = "post/"
-  weight = 20
-
-[[main]]
-  name = "Stories"
-  url = "#projects"
   weight = 30
 
 [[main]]
+  name = "Historias"
+  url = "#projects"
+  weight = 20
+
+[[main]]
   name = "Publicaciones"
-  url = "#featured"
+  url = "#publications"
   weight = 40
 
 #[[main]]
