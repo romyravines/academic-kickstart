@@ -35,8 +35,7 @@ doi = "https://doi.org/10.1016/j.cor.2014.06.010"
 featured = false
 
 # Tags (optional).
-#   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["Optimization"]
+tags = ["Optimization","Forecastinh"]
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -55,7 +54,7 @@ projects = []
 slides = ""
 
 # Links (optional).
-url_pdf = "http://arxiv.org/pdf/1512.04133v1"
+url_pdf = "https://www.sciencedirect.com/science/article/pii/S0305054814001683"
 url_code = ""
 url_dataset = ""
 url_project = ""

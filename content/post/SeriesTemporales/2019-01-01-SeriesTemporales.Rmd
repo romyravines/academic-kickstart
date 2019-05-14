@@ -20,6 +20,8 @@ library(plotly)
 
 ## Series Temporales
 
+$$Y_t=Y_t-1 + \epsilon_t$$
+
 ### ¿Qué es una Serie Temporal?
 
 Una **serie temporal** es una secuencia de datos, medidos a intervalos de tiempo sucesivos regularmente espaciados.
