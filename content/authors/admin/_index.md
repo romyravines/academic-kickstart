@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-Entender, Modelizar, Predecir = Aprender y extraer valor para personas y organizaciones.
+bio: Entender, Modelizar, Predecir = Aprender y extraer valor para personas y organizaciones.
 
 interests:
 - Machine Learning & IA

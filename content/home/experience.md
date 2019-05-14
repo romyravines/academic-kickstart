@@ -25,12 +25,7 @@ date_format = "Jan 2006"
   date_start = "2017-10-23"
   date_end = ""
   description = """
-  Responsibilities include:
-  
-  * Lider Técnico en Analítica Avanzada
-  * Desarrollo de Negocio en el ámbito de Analítica Avanzada
-  * Diseño de soluciones end-to-end
-  * Colaboración con Marketing y Comunicación
+
   """
 
 [[experience]]
@@ -41,27 +36,15 @@ date_format = "Jan 2006"
   date_start = "2008-01-01"
   date_end = "2017-08-31"
   description = """
-  Responsibilities include:
-  
-  * Lider Técnico en Modelos Dinámicos Bayesianos
-  * Desarrollo de Negocio en el ámbito de Ciencia de Datos
-  * Dirección académica de la Escuela Bayes
-  * Dirección de Calidad y Comunicación
   """  
 
 [[experience]]
-  title = "Consultor en Estadística"
+  title = "Investigador Pre y Post Doctorado"
   company = "Fundación Oswaldo Cruz"
   company_url = ""
   location = "Rio de Janeiro (Brasil)"
   date_start = "2008-01-01"
   date_end = "2017-08-31"
   description = """
-  Responsibilities include:
-  
-  * Lider Técnico en Modelos Dinámicos Bayesianos
-  * Desarrollo de Negocio en el ámbito de Ciencia de Datos
-  * Dirección académica de la Escuela Bayes
-  * Dirección de Calidad y Comunicación
   """    
 +++
