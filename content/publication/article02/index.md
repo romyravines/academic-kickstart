@@ -29,7 +29,7 @@ abstract = "Leptospirosis has emerged as an urban health problem as slum settlem
 summary = ""
 
 # Digital Object Identifier (DOI)
-doi = "https://doi.org/10.1371/journal.pntd.0002927 "
+doi = "10.1371/journal.pntd.0002927 "
 
 # Is this a featured publication? (true/false)
 featured = false
@@ -79,6 +79,3 @@ url_source = ""
   focal_point = ""
 +++
 
-{{% alert note %}}
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-{{% /alert %}}

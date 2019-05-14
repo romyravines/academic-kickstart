@@ -29,7 +29,7 @@ abstract = "The multistage Stochastic Linear Programming (SLP) problem may becom
 #summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
 
 # Digital Object Identifier (DOI)
-doi = "https://doi.org/10.1016/j.cor.2014.06.010"
+doi = "10.1016/j.cor.2014.06.010"
 
 # Is this a featured publication? (true/false)
 featured = false
@@ -78,6 +78,3 @@ url_source = ""
   focal_point = ""
 +++
 
-{{% alert note %}}
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-{{% /alert %}}
