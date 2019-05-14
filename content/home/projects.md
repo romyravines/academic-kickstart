@@ -26,12 +26,21 @@ subtitle = "Soluciones Reales para Desafíos Reales"
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "Mercado"
+    tag = "Market"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Clientes"
+    tag = "Clients"
+
+  [[content.filter_button]]
+    name = "Operaciones"
+    tag = "Operations"
+
+ [[content.filter_button]]
+    name = "Otros"
+    tag = "Others"
+
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
