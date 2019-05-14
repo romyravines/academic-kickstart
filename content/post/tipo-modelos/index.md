@@ -17,16 +17,10 @@ image:
   focal_point: ""
 ---
 
-Tipos de Problemas
-==================
+# Tipos de Problemas
 
-<!-- ## Problemas Supervisados vs. Problemas No Supervisados -->
-<!-- Machine learning uses two types of techniques: supervised -->
-<!-- learning, which trains a model on known input and output data so -->
-<!-- that it can predict future outputs, and unsupervised learning, which -->
-<!-- finds hidden patterns or intrinsic structures in input data. -->
 
-<img src="imgs/mlalgorithms01.png" width="90%" />
+<img src='/post/2018-01-01-TipoModelos_files/mlalgorithms01.png' alt="" style="float:width:90%;">
 
 En bastante común que los algoritmos de *Machine Learning* en
 aprendizaje supervisado y aprendizaje no supervisado. Esta misma
