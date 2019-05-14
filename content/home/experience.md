@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   location = "Madrid (España)"
   date_start = "2017-10-23"
   date_end = ""
-  description = """
+  description = """ Innova-tsn construye soluciones personalizadas y ofrece ideas nuevas e innovadoras con un objetivo claro: brindar a los Clientes ventajas competitivas para ayudarles en sus decisiones. En otras palabras, Innova-tsn ayuda a las empresas en sus procesos de toma de decisiones, a convertir las decisiones en acciones con un impacto real en sus resultados. Innova-tsn ofrece soluciones completas y orientadas a objetivos en las áreas de arquitectura de sistemas, ingeniería de datos, inteligencia de clientes, _business discovery_ y _advanced analytics_.
 
   """
 
@@ -35,7 +35,7 @@ date_format = "Jan 2006"
   location = "Madrid (España)"
   date_start = "2008-01-01"
   date_end = "2017-08-31"
-  description = """
+  description = """  Bayes Forecast es experta en la organización y tratamiento de datos de diversas fuentes, así como en la creación de sistemas de modelación, que usan el conocimiento de negocio y ofrecen previsiones con elevado impacto sobre las decisiones estratégicas: maximizar la rentabilidad de las inversiones, minimizar los costes, optimizar los inventarios, retener y ganar clientes, crear nuevos productos, etc.
   """  
 
 [[experience]]
