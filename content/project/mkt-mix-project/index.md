@@ -1,12 +1,9 @@
 ---
-title: Internal Project
-summary: An example of using the in-built project page.
-tags: 
--
-date: "2016-04-27T00:00:00Z"
-
-# Optional external URL for project (replaces project detail page).
-#external_link: ""
+title: MARKETING MIX MODELS
+summary: Analizando el impacto de las acciones de marketing
+tags: ["Demand Forecasting", "Bayesian Inference"]
+categories: ["Marketing","Retail"]
+date: "2014-04-01T00:00:00Z"
 
 image:
   caption: ""

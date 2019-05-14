@@ -1,11 +1,10 @@
 ---
 title: BEHAVIOURAL SEGMENTATION FOR CUSTOMER LOYALTY
 summary: Una segmentación dinámica que sugiere acciones.
-tags: ["R", "Machine Learning", "Analytics", "Segmentation"]
-date: "2011-04-01T00:00:00Z"
+tags: ["Machine Learning", "Analytics", "Segmentation"]
+categories: ["Marketing","Clients"]
 
-# Optional external URL for project (replaces project detail page).
-#external_link: http://example.org
+date: "2011-04-01T00:00:00Z"
 
 image:
   caption: ""
