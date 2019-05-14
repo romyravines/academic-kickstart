@@ -6,7 +6,7 @@ active = true  # Activate this widget? true/false
 weight = 65  # Order that this section will appear.
 
 title = "Stories"
-subtitle = "Aplicaciones reales de DS"
+subtitle = "Aplicaciones reales de Analítica Avanzada"
 
 [content]
   # Page type to display. E.g. project.
