@@ -2,20 +2,8 @@
 title = "An efficient sampling scheme for dynamic generalized models"
 date = 2013-03-01T00:00:00
 
-# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["admin", "Alexandra M. Schmidt", "Helio S. Migon"]
 
-# Publication type.
-# Legend:
-# 0 = Uncategorized
-# 1 = Conference paper
-# 2 = Journal article
-# 3 = Preprint / Working Paper
-# 4 = Report
-# 5 = Book
-# 6 = Book section
-# 7 = Thesis
-# 8 = Patent
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
@@ -26,7 +14,7 @@ publication_short = ""
 abstract = "A multimove sampling scheme for the state parameters of non-Gaussian and nonlinear dynamic models for univariate time series is proposed. This procedure follows the Bayesian framework, within a Gibbs sampling algorithm with steps of the Metropolis–Hastings algorithm. This sampling scheme combines the conjugate updating approach for generalized dynamic linear models, with the backward sampling of the state parameters used in normal dynamic linear models. A quite extensive Monte Carlo study is conducted in order to compare the results obtained using our proposed method, conjugate updating backward sampling (CUBS), with those obtained using some algorithms previously proposed in the Bayesian literature. We compare the performance of CUBS with other sampling schemes using two real datasets. Then we apply our algorithm in a stochastic volatility model. CUBS significantly reduces the computing time needed to attain convergence of the chains, and is relatively simple to implement."
 
 # Summary. An optional shortened abstract.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
+summary = ""
 
 # Digital Object Identifier (DOI)
 doi = "10.1007/s00180-013-0406-9"
@@ -35,23 +23,12 @@ doi = "10.1007/s00180-013-0406-9"
 featured = false
 
 # Tags (optional).
-#   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["Source Themes"]
+tags = ["Brasil", "UFRJ"]
 
 # Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["deep-learning"]` references 
-#   `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
 projects = []
 
 # Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
-#   `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
 slides = ""
 
 # Links (optional).
@@ -65,7 +42,6 @@ url_poster = ""
 url_source = ""
 
 # Custom links (optional).
-#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
 # links = [{name = "Custom Link", url = "http://example.org"}]
 
 # Featured image
@@ -79,6 +55,3 @@ url_source = ""
   focal_point = "Center"
 +++
 
-{{% alert note %}}
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
-{{% /alert %}}
