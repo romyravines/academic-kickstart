@@ -1,9 +1,9 @@
 +++
-title = "An example preprint / working paper"
-date = 2019-04-07T00:00:00
+title = "An Effective Heuristic for Multistage Linear Programming with a Stochastic Right-Hand Side"
+date = 2014-11-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["admin"]
+authors = ["admin","C.Beltran-Royo","L.F.Escudero","J.F.Monge"]
 
 # Publication type.
 # Legend:
@@ -16,27 +16,27 @@ authors = ["admin"]
 # 6 = Book section
 # 7 = Thesis
 # 8 = Patent
-publication_types = ["3"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = ""
+publication = "Computers & Operations Research"
 publication_short = ""
 
 # Abstract.
-abstract = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida."
+abstract = "The multistage Stochastic Linear Programming (SLP) problem may become numerically intractable for huge instances, in which case one can solve an approximation for example the well known multistage Expected Value (EV) problem. We introduce a new approximation to the SLP problem that we call the multistage Event Linear Programming (ELP) problem. To obtain this approximation the SLP constraints are aggregated by means of the conditional expectation operator. Based on this new problem we derive the ELP heuristic that produces a lower and an upper bound for the SLP problem. We have assessed the validity of the ELP heuristic by solving large scale instances of the network revenue management problem, where the new approach has clearly outperformed the EV approach. One limitation of this paper is that it only considers randomness on the right-hand side, which is assumed to be discrete and stagewise independent."
 
 # Summary. An optional shortened abstract.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
+#summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
 
 # Digital Object Identifier (DOI)
-doi = ""
+doi = "https://doi.org/10.1016/j.cor.2014.06.010"
 
 # Is this a featured publication? (true/false)
 featured = false
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["Source Themes"]
+tags = ["Optimization"]
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -72,7 +72,7 @@ url_source = ""
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 [image]
   # Caption (optional)
-  caption = "Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)"
+  caption = " "
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
