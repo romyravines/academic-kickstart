@@ -4,6 +4,9 @@ author: "Romy Rodriguez-Ravines"
 date: 2019-05-08
 categories: ["R"]
 tags: ["R", "Time Series", "Analytics"]
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
