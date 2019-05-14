@@ -10,7 +10,7 @@ subtitle = ""
 
 [design.background]
   # Background color.
-  color = "SkyBlue"
+  color = "Navy"
   
 # Automatically link email and phone?
 autolink = true
