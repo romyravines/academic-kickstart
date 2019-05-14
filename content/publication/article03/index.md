@@ -1,9 +1,9 @@
 +++
-title = "Prospective Study of Leptospirosis Transmission in an Urban Slum Community: Role of Poor Environment in Repeated Exposures to the Leptospira Agent"
-date = 2014-05-01T00:00:00
+title = "An efficient sampling scheme for dynamic generalized models"
+date = 2013-03-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["admin", "Ridalva D. M. Felzemburgh","Guilherme S. Ribeiro","et.al" ]
+authors = ["admin", "Alexandra M. Schmidt", "Helio S. Migon"]
 
 # Publication type.
 # Legend:
@@ -19,24 +19,24 @@ authors = ["admin", "Ridalva D. M. Felzemburgh","Guilherme S. Ribeiro","et.al" ]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "PLOS Neglected Tropical Diseases"
+publication = "Computatitonal Statistics: Volume 28, Issue 5 (2013), pp 2267-2293."
 publication_short = ""
 
 # Abstract.
-abstract = "Leptospirosis has emerged as an urban health problem as slum settlements have rapidly spread worldwide and created conditions for rat-borne transmission. Prospective studies have not been performed to determine the disease burden, identify risk factors for infection and provide information needed to guide interventions in these marginalized communities."
+abstract = "A multimove sampling scheme for the state parameters of non-Gaussian and nonlinear dynamic models for univariate time series is proposed. This procedure follows the Bayesian framework, within a Gibbs sampling algorithm with steps of the Metropolis–Hastings algorithm. This sampling scheme combines the conjugate updating approach for generalized dynamic linear models, with the backward sampling of the state parameters used in normal dynamic linear models. A quite extensive Monte Carlo study is conducted in order to compare the results obtained using our proposed method, conjugate updating backward sampling (CUBS), with those obtained using some algorithms previously proposed in the Bayesian literature. We compare the performance of CUBS with other sampling schemes using two real datasets. Then we apply our algorithm in a stochastic volatility model. CUBS significantly reduces the computing time needed to attain convergence of the chains, and is relatively simple to implement."
 
 # Summary. An optional shortened abstract.
-summary = ""
+summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum."
 
 # Digital Object Identifier (DOI)
-doi = "10.1371/journal.pntd.0002927 "
+doi = "10.1007/s00180-013-0406-9"
 
 # Is this a featured publication? (true/false)
 featured = false
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["Leptospirosis"]
+tags = ["Source Themes"]
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -52,10 +52,10 @@ projects = []
 #   E.g. `slides = "example-slides"` references 
 #   `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides = " "
+slides = ""
 
 # Links (optional).
-url_pdf = "http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0002927"
+url_pdf = "http://link.springer.com/article/10.1007%2Fs00180-013-0406-9"
 url_code = ""
 url_dataset = ""
 url_project = ""
@@ -72,10 +72,13 @@ url_source = ""
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 [image]
   # Caption (optional)
-  caption = " "
+  caption = ""
 
   # Focal point (optional)
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = "Smart"
+  focal_point = "Center"
 +++
 
+{{% alert note %}}
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+{{% /alert %}}
