@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "Píldoras"
-subtitle = ""
+subtitle = "Notas sobre Temas"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

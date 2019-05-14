@@ -8,12 +8,12 @@ abstract: "¿Qué es Big Data? Le preguntamos a Twitter."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2018-03-14T13:00:00Z"
+date: "2018-03-14"
 #date_end: "2030-06-01T15:00:00Z"
-all_day: false
+all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2018-01-04T00:00:00Z"
+publishDate: "2018-01-04"
 
 authors: []
 tags: []
