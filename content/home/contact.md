@@ -5,9 +5,11 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 130  # Order that this section will appear.
 
-title = "Contact"
+title = "Contacto"
 subtitle = ""
-
+  # Background color.
+  color = "SkyBlue"
+  
 # Automatically link email and phone?
 autolink = true
 

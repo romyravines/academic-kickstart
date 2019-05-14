@@ -45,7 +45,7 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
     
   # Background color.
-    color = "grey"
+  #  color = "SkyBlue"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
@@ -66,6 +66,3 @@ subtitle = ""
  css_class = ""
 +++
 
-{{% alert note %}}
-Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
-{{% /alert %}}
