@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 90  # Order that this section will appear.
 
-title = "Recent Publications"
+title = "Publicaciones"
 subtitle = ""
 
 [content]
@@ -45,7 +45,7 @@ subtitle = ""
   #   Any HTML color name or Hex value is valid.
     
   # Background color.
-  # color = "navy"
+    color = "grey"
   
   # Background gradient.
   # gradient_start = "DeepSkyBlue"
