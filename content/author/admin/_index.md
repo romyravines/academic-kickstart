@@ -18,13 +18,13 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-Pasión por la Ciencia de Datos: Entender, Modelizar, Predecir = Aprender y extraer valor para personas y organizaciones.
+bio: Entender, Modelizar, Predecir = Aprender y extraer valor para personas y organizaciones.
 
 interests:
-- Machine Learning & IA
 - Estadística
-- Econometría
 - Infoque Bayesiano
+- Econometría
+- Machine Learning
 
 education:
   courses:
@@ -66,9 +66,9 @@ email: ""
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
 Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y organizaciones a extraer conocimiento útil de su datos. Mi formación estadística, con enfoque bayesiano, y mi trabajo con machine learning me han permitido tener facilidad para entender y modelizar datos con una visión doble: hypothesis-driven y data-driven.
