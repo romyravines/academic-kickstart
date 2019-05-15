@@ -23,7 +23,6 @@ bio: Entender, Modelizar, Predecir = Aprender y extraer valor para personas y or
 interests:
 - Estadística
 - Infoque Bayesiano
-- Econometría
 - Machine Learning
 
 education:
