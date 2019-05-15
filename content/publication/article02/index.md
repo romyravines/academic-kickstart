@@ -3,7 +3,7 @@ title = "Prospective Study of Leptospirosis Transmission in an Urban Slum Commun
 date = 2014-05-01T00:00:00
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["admin", "Ridalva D. M. Felzemburgh","Guilherme S. Ribeiro","et.al" ]
+authors = ["Romy Rodríguez-Ravines", "Ridalva D. M. Felzemburgh","Guilherme S. Ribeiro","et.al" ]
 
 # Publication type.
 # Legend:

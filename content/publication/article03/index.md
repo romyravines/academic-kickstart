@@ -2,7 +2,7 @@
 title = "An efficient sampling scheme for dynamic generalized models"
 date = 2013-03-01T00:00:00
 
-authors = ["admin", "Alexandra M. Schmidt", "Helio S. Migon"]
+authors = ["Romy Rodríguez-Ravines", "Alexandra M. Schmidt", "Helio S. Migon"]
 
 publication_types = ["2"]
 

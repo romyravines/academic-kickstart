@@ -1,31 +1,31 @@
 +++
-title = "An Effective Heuristic for Multistage Linear Programming with a Stochastic Right-Hand Side"
-date = 2014-11-01T00:00:00
+title = "Public health vulnerability to climate change in Brazil"
+date = 2009-12-01T00:00:00
 
 # Authors. 
-authors = ["admin","C.Beltran-Royo","L.F.Escudero","J.F.Monge"]
+authors = ["Romy Rodríguez-Ravines","Ulises Confalonieri","Diana P. Marinho "]
 
 # Publication type.
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "Computers & Operations Research"
+publication = "Climate Research 40(2-3):175-186"
 publication_short = ""
 
 # Abstract.
-abstract = "The multistage Stochastic Linear Programming (SLP) problem may become numerically intractable for huge instances, in which case one can solve an approximation for example the well known multistage Expected Value (EV) problem. We introduce a new approximation to the SLP problem that we call the multistage Event Linear Programming (ELP) problem. To obtain this approximation the SLP constraints are aggregated by means of the conditional expectation operator. Based on this new problem we derive the ELP heuristic that produces a lower and an upper bound for the SLP problem. We have assessed the validity of the ELP heuristic by solving large scale instances of the network revenue management problem, where the new approach has clearly outperformed the EV approach. One limitation of this paper is that it only considers randomness on the right-hand side, which is assumed to be discrete and stagewise independent."
+abstract = "A national quantitative assessment of the current vulnerability of the Brazilian population to the health impacts of climate change was undertaken with the support of the Brazilian Ministry of Science and Technology. A conceptual framework of vulnerability in the health sector, according to a modiﬁed general ‘exposure–response’ model, was adopted (Confalonieri 2003). For the quantiﬁcation of vulnerability, a new methodology was used to develop a synthetic (composite) general vulnerability index from averages of speciﬁc indices of vulnerability in 3 areas: socio-economic, epidemiological and climatological. We found that the greatest inﬂuence on the general vulnerability index (of the most vulnerable states) was from the socio-economic vulnerability index. The approach used also demonstrated that the northeast is the most vulnerable Brazilian region to the health impacts of a changing climate."
 
 # Summary. An optional shortened abstract.
 summary = ""
 
 # Digital Object Identifier (DOI)
-doi = "10.1016/j.cor.2014.06.010"
+doi = "10.3354/cr00808"
 
 # Is this a featured publication? (true/false)
 featured = false
 
 # Tags (optional).
-tags = ["Optimization","Forecastinh"]
+tags = ["Climate Change","Statistics"]
 
 # Projects (optional).
 projects = []
@@ -34,10 +34,10 @@ projects = []
 slides = ""
 
 # Links (optional).
-url_pdf = "https://www.sciencedirect.com/science/article/pii/S0305054814001683"
+url_pdf = "http://www.int-res.com/articles/cr_oa/c040p175.pdf"
 url_code = ""
 url_dataset = ""
-url_project = ""
+url_project = "https://www.researchgate.net/publication/250220889_Public_health_vulnerability_to_climate_change_in_Brazil"
 url_slides = ""
 url_video = ""
 url_poster = ""

@@ -3,7 +3,7 @@ title = "Impact of Environment and Social Gradient on Leptospira Infection in Ur
 date = 2008-04-01T00:00:00
 
 # Authors. 
-authors = ["admin","Ridalva M. Felzemburgh ","et.al"]
+authors = ["Romy Rodríguez-Ravines","Ridalva M. Felzemburgh ","et.al"]
 
 # Publication type.
 publication_types = ["2"]

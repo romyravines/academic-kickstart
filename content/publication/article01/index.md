@@ -3,13 +3,13 @@ title = "An Effective Heuristic for Multistage Linear Programming with a Stochas
 date = 2014-11-01T00:00:00
 
 # Authors. 
-authors = ["admin","C.Beltran-Royo","L.F.Escudero","J.F.Monge"]
+authors = ["Romy Rodríguez-Ravines","C.Beltran-Royo","L.F.Escudero","J.F.Monge"]
 
 # Publication type.
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "Computers & Operations Research"
+publication = "Computers & Operations Research. Volume 51. Pages 237-250"
 publication_short = ""
 
 # Abstract.

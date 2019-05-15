@@ -3,7 +3,7 @@ title = "A joint model for rainfall-runoff: the case of Rio Grande Basin"
 date = 2008-05-01T00:00:00
 
 # Authors. 
-authors = ["admin", "Alexandra M. Schmidt", "Helio S. Migon"]
+authors = ["Romy Rodríguez-Ravines", "Alexandra M. Schmidt", "Helio S. Migon"]
 
 # Publication type.
 publication_types = ["2"]
