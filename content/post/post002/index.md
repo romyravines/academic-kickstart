@@ -26,7 +26,7 @@ projects: []
 # ¿Supervisado o No?
 
 
-<img src='/post/post002/index_files/mlalgorithms01.png' alt="" style="float:width:90%;">
+<img src='/post/post002/mlalgorithms01.png' alt="" style="float:width:90%;">
 
 
 

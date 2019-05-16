@@ -117,9 +117,9 @@ Esta opción es computacionalmente menos costosa y permite aproximar la interpre
 
 Para facilitar la interpretación de resultados, se recomienda utilizar un modelo simplificado donde participen las variables que conttribuyan con, por ejemplo, el 75% del gain del modelo.
 
-<img src='/post/post001/index_files/booklet04.png' alt=" " style="width:40%;">
+<img src='/post/post001/booklet04.png' alt=" " style="width:40%;">
 
-<img src='/post/post001/index_files/booklet03.png' alt=" " style="width:60%;">
+<img src='/post/post001/booklet03.png' alt=" " style="width:60%;">
 
 Nota: Algunos recomiendan usar directamente la funición predict del xgboost con la opcion contrib=TRUE antes que las funciones del XGBoostExplainer. (ver aqui^[https://www.reddit.com/r/learnmachinelearning/comments/9n2kq2/fyi_for_those_of_you_using_the_xgboostexplainer/])
 
