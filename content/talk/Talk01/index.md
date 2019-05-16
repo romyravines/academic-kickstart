@@ -60,3 +60,12 @@ math: true
 
 [handout](/files/20180606.3SMadrid.InScoring.pdf)
 
+
+https://romyravines.netlify.com/files/20180606.3SMadrid.InScoring.pdf
+
+
+<object data="/files/20180606.3SMadrid.InScoring.pdf" type="application/pdf"
+        width="800" height="1200" typemustmatch>
+  <p>You don't have a PDF plugin, but you can <a href="/files/20180606.3SMadrid.InScoring.pdf">download the PDF file.</a></p>
+</object>
+
