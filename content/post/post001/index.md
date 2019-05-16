@@ -35,7 +35,7 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
-<img src='/post/2019-05-06-interpretaml_files/booklet01.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/booklet01.png' alt="Model" style="float:width:90%;">
 
 
 ### Alcance (Scope) de la Interpretación
@@ -46,7 +46,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
-<img src='/post/2019-05-06-interpretaml_files/booklet02.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/booklet02.png' alt="Model" style="float:width:90%;">
 
 
 ### Herramientas
@@ -102,13 +102,13 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una buena aproximación a la interpretación de la previsión individual de todos los clientes.
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
-<img src='/post/2019-05-06-interpretaml_files/Cluster1.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/Cluster1.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/2019-05-06-interpretaml_files/Cluster3.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/Cluster3.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/2019-05-06-interpretaml_files/Cluster10.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/Cluster10.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/2019-05-06-interpretaml_files/Cluster15.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/index_files/Cluster15.png' alt="Model" style="float:width:50%;">
 
 
 ### Procedimiento con xgboostExplainer
@@ -117,12 +117,9 @@ Esta opción es computacionalmente menos costosa y permite aproximar la interpre
 
 Para facilitar la interpretación de resultados, se recomienda utilizar un modelo simplificado donde participen las variables que conttribuyan con, por ejemplo, el 75% del gain del modelo.
 
-<img src='/post/2019-05-06-interpretaml_files/booklet04.png' alt=" " style="width:40%;">
+<img src='/post/post001/index_files/booklet04.png' alt=" " style="width:40%;">
 
-<img src='/post/2019-05-06-interpretaml_files/booklet03.png' alt=" " style="width:60%;">
+<img src='/post/post001/index_files/booklet03.png' alt=" " style="width:60%;">
 
 Nota: Algunos recomiendan usar directamente la funición predict del xgboost con la opcion contrib=TRUE antes que las funciones del XGBoostExplainer. (ver aqui^[https://www.reddit.com/r/learnmachinelearning/comments/9n2kq2/fyi_for_those_of_you_using_the_xgboostexplainer/])
-
-
-
 
