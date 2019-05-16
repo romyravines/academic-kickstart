@@ -35,7 +35,7 @@ Los modelos de Machine learning son conocidos por su alto poder predictivo, pero
 
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 
-<img src='/post/post001/index_files/booklet01.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/booklet01.png' alt="Model" style="float:width:90%;">
 
 
 ### Alcance (Scope) de la Interpretación
@@ -46,7 +46,7 @@ La interpretación de los modelos se puede realizar con dos perspectivas:
 
 1. Interpretación **LOCAL**. Permite explicar la interacción entre la variable respuesta (_target_) y las variables explicativas (_features_) para una única observación o **individuo**.
 
-<img src='/post/post001/index_files/booklet02.png' alt="Model" style="float:width:90%;">
+<img src='/post/post001/booklet02.png' alt="Model" style="float:width:90%;">
 
 
 ### Herramientas
@@ -102,13 +102,13 @@ Por dicho motivo, utilizamos un procedimiento aproximado para interpretar los re
  1. Proporcionar una buena aproximación a la interpretación de la previsión individual de todos los clientes.
  1. Proporcionar una interpretación agnóstica del modelo, priorizando las variables más importantes en la construcción de la previsión.
 
-<img src='/post/post001/index_files/Cluster1.png' alt="Model" style="float:width:50%;">
+<img src='/post/post001/Cluster1.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/post001/index_files/Cluster3.png' alt="Model" style="float:width:50%;">
+<img src='/post/post001/Cluster3.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/post001/index_files/Cluster10.png' alt="Model" style="float:width:50%;">
+<img src='/post/post001/Cluster10.png' alt="Model" style="float:width:50%;">
 
-<img src='/post/post001/index_files/Cluster15.png' alt="Model" style="float:width:50%;">
+<img src='/post/post001/Cluster15.png' alt="Model" style="float:width:50%;">
 
 
 ### Procedimiento con xgboostExplainer
