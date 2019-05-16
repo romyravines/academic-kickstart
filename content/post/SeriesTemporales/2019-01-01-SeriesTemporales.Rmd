@@ -7,6 +7,9 @@ tags: ["R", "Time Series", "Analytics"]
 output: 
   html_document: 
     keep_md: true
+
+# Enable math on this page?
+math: true    
 ---
 
 ```{r setup, include=FALSE}
