@@ -45,18 +45,13 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: linkedin
+- icon: linkedin-in
   icon_pack: fab
   link: https://www.linkedin.com/in/romyravines/  
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/RavinesRomy
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/gcushen
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 # - icon: cv
@@ -75,4 +70,4 @@ email: ""
 
 Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y organizaciones a extraer conocimiento útil de su datos. Mi formación estadística, con enfoque bayesiano, y mi trabajo con machine learning me han permitido tener facilidad para entender y modelizar datos con una visión doble: hypothesis-driven y data-driven.
 
-He tenido la oportunidad de trabajar con líderes en consultoría, de los cuales aprendi habilidades de comunicación. Ahora desempeño labores de formación de equipos.  
+He tenido la oportunidad de trabajar con líderes en consultoría, de los cuales aprendi habilidades de comunicación. Me dedico a la creación de soluciones basadas en la correcta e innovadora aplicación de la ciencia de datos a problemas empresariales. También participo en acciones formativas y, sobretodo, estoy muy implicada en el desarrollo del talento analítico joven.  

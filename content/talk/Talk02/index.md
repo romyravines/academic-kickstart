@@ -35,6 +35,18 @@ url_pdf: "20180606.3SMadrid.InScoring.pdf"
 url_slides: "http://www.innova-tbs.com/sites/cursos/BigDataToAction2018/index.html#3"
 url_video: "https://youtu.be/JBofRushPYY"
 
+# Set captions for image gallery.
+gallery_item:
+- album: gallery
+  caption: #BDTA18
+  image: BDTA18_01.jpg
+- album: gallery
+  caption: #BDTA18
+  image: BDTA18_03.jpg
+- album: gallery
+  caption: #BDTA18
+  image: BDTA18_03.jpg
+
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
@@ -54,8 +66,11 @@ math: true
 ---
 
 
-[*Slides*](http://www.innova-tbs.com/sites/cursos/BigDataToAction2018/index.html#3)
+[*Ver Slides en html*](http://www.innova-tbs.com/sites/cursos/BigDataToAction2018/index.html#3)
 
-[*Video*](https://youtu.be/JBofRushPYY)
+[*Ver Video de la ponencia*](https://youtu.be/JBofRushPYY)
 
-[*Entrevista*](https://youtu.be/kQhApYWkHaM)
+[*Ver Entrevista posterior a la ponencia*](https://youtu.be/kQhApYWkHaM)
+
+
+{{< gallery >}}
