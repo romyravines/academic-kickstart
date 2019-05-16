@@ -53,16 +53,13 @@ projects: []
 math: true
 ---
 
+Ponencia representado a Innova-tsn, uno de los patrocinadores del evento.
 
-
-[*Entrevista posterior a la ponencia *](https://t.co/Z5Iwlk5Q6t)
+[*Ver entrevista posterior a la ponencia *](https://t.co/Z5Iwlk5Q6t)
 
 
 <object data="/files/20180606.3SMadrid.InScoring.pdf" type="application/pdf"
-        width="800" height="600" typemustmatch>
+        width="800" height="400" typemustmatch>
   <p>You don't have a PDF plugin, but you can <a href="/files/20180606.3SMadrid.InScoring.pdf">download the PDF file.</a></p>
 </object>
-
-
-### [handout](/files/20180606.3SMadrid.InScoring.pdf)
 
