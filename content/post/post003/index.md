@@ -62,12 +62,10 @@ En las secciones siguiente se describen brevemente algunos conceptos necesarios 
 
 ### Operador de retardo simple
 
-El **operador de retardo simple** se define como
+El operador de retardo simple se define como
 
 $$
-\begin{equation}
 Bz_t=z_{t-1}
-\end{equation}
 $$
 
 Si aplicamos el operador de retardo dos veces:
@@ -86,10 +84,8 @@ $$ B^n z_t=z_{t-n} $$
 De modo análogo, definimos el **operador de adelanto simple**
 
 $$
-\begin{align}
     Fz_t&=z_{t+1}\\
     F^n z_t&=z_{t+n}
-\end{align}
 $$
 
 El operador $F$ es el inverso del operador $B$ ya que:
