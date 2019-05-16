@@ -65,6 +65,8 @@ projects: []
 math: true
 ---
 
+Ponencia representado a [Innova-tsn](https://www.innova-tsn.com/), uno de los patrocinadores del evento.
+
 
 [*Ver Slides en html*](http://www.innova-tbs.com/sites/cursos/BigDataToAction2018/index.html#3)
 

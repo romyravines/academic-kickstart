@@ -32,8 +32,18 @@ links:
   url: https://twitter.com/RavinesRomy
 url_code: ""
 url_pdf: ""
-url_slides: "http://www.innova-tbs.com/sites/cursos/BigDataToAction2018/index.html#3"
+url_slides: ""
 url_video: ""
+
+# Set captions for image gallery.
+gallery_item:
+- album: gallery
+  caption: #3SMadrid18
+  image: 3S2018_01.png
+- album: gallery
+  caption: #3SMadrid18
+  image: 3S2018_02.jpg
+
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -53,13 +63,16 @@ projects: []
 math: true
 ---
 
-Ponencia representado a Innova-tsn, uno de los patrocinadores del evento.
+Ponencia representado a [Innova-tsn](https://www.innova-tsn.com/), uno de los patrocinadores del evento.
 
-[*Ver entrevista posterior a la ponencia *](https://t.co/Z5Iwlk5Q6t)
+[Ver entrevista posterior a la ponencia](https://t.co/Z5Iwlk5Q6t)
 
 
 <object data="/files/20180606.3SMadrid.InScoring.pdf" type="application/pdf"
-        width="800" height="400" typemustmatch>
+        width="800" height="500" typemustmatch>
   <p>You don't have a PDF plugin, but you can <a href="/files/20180606.3SMadrid.InScoring.pdf">download the PDF file.</a></p>
 </object>
 
+
+
+{{< gallery >}}
