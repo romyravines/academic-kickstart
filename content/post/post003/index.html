@@ -1,0 +1,233 @@
+---
+title: 'Mis ventas: ¿Series temporales?'
+subtitle: '¿Como trabajar con datos históricos?'
+summary: Las ventas tienen características particulares que deben tenerse en cuenta al hacer modelos y obtener previsiones.
+authors:
+- admin
+tags: ["Forecasting"]
+categories: ["Statistics"]
+date: "2016-04-20T00:00:00Z"
+lastmod: "2019-04-17T00:00:00Z"
+featured: false
+draft: false
+output: 
+  html_document: 
+    keep_md: true
+---
+
+
+
+<p>{{% alert note %}}
+Una serie temporal (o simplemente una serie) es una secuencia de N observaciones ordenadas y equidistantes cronológicamente sobre una característica o varias características de una unidad observable en diferentes momentos.
+{{% /alert %}}</p>
+<ul>
+<li>Si la serie es sobre una característica se dice que es univariante o escalar.</li>
+<li>Si la serie es sobre dos o más características se dice que es multivariante o vectorial.</li>
+</ul>
+<p>El estudio de las series temporales permite: (1) entender mejor el mecanismo de generación de los datos, que puede no ser claro inicialmente en una investigación y/o (2) hacer pronósticos sobre el futuro, es decir: previsiones. Las previsiones se utilizan en forma constante en diversos campos: economía, finanzas, marketing, medio ambiente, ingeniería, etc. En general, las previsiones proporcionan una guía para las decisiones que deben tomarse.</p>
+<p>Algunos ejemplos de uso de las previsiones son:</p>
+<ul>
+<li><p>En <strong>Planeamiento y Control de Operaciones</strong>. Las decisiones de producción de un artículo con base en los pronósticos de ventas. Es posible por ejemplo, detectar una disminución en la tendencia de ventas que conlleve a reducir la producción, o al contrario.</p></li>
+<li><p>En Marketing. La decisión de invertir en publicidad puede depender de prever las ventas.</p></li>
+<li><p>En <strong>Economía</strong>. Las decisiones del Banco de España, por ejemplo para el control de la inflación, requieren la previsión y el examen del comportamiento de ciertas variables macroeconómicas, como el PIB, la tasa de desempleo, el IPC, las tasas de interés a distintos plazos, activas y pasivas.</p></li>
+<li><p>En <strong>Turismo</strong>. La previsión del de número de turistas mensuales para determinar la demanda hotelera.</p></li>
+<li><p>En <strong>Epidemiología</strong> y <strong>Medio Ambiente</strong>. La vigilancia de los niveles de contaminantes en el aire tiene como herramienta fundamental las series de tiempo. Pero adicionalmente el efecto de estos niveles sobre la salud</p></li>
+</ul>
+<p>Todas las series temporales tienen características particulares. Asi por ejemplo, las series pueden:</p>
+<ul>
+<li>evolucionar alrededor de un nivel constante o tienen tendencias crecientes o decrecientes,</li>
+<li>evolucionar alrededor de un nivel que cambia sin seguir aparentemente un patrón concreto - tienen tendencia estocástica -</li>
+<li>presentar reducciones (en invierno) y aumentos (en verano) sistemáticos en su nivel cada 12 meses - son estacionales -</li>
+<li>presentar variabilidad constante alrededor de su nivel</li>
+<li>presentar variabilidad condicional o alta volatilidad,</li>
+<li>moverse conjuntamente con otras series - tendencia común -</li>
+<li>etc.</li>
+</ul>
+<p>En las secciones siguiente se describen brevemente algunos conceptos necesarios para la modelación básica de series temporales.</p>
+<div id="operadores" class="section level2">
+<h2>Operadores</h2>
+<div id="operador-de-retardo-simple" class="section level3">
+<h3>Operador de retardo simple</h3>
+<p>El operador de retardo simple se define como</p>
+<p><span class="math inline">\(Bz_t=z_{t-1}\)</span></p>
+<p>Si aplicamos el operador de retardo dos veces:</p>
+<p><span class="math inline">\(BBz_t=Bz_{t-1}=z_{t-2}\)</span></p>
+<p>Del mismo modo, si aplicamos <span class="math inline">\(n\)</span> veces el operador de retardo, obtenemos:</p>
+<p><span class="math display">\[ BB \ldots Bz_t=z_{t-n} \]</span></p>
+<p>Definimos, por tanto</p>
+<p><span class="math display">\[ B^n z_t=z_{t-n} \]</span></p>
+</div>
+<div id="operador-de-adelanto-simple" class="section level3">
+<h3>Operador de adelanto simple</h3>
+<p>De modo análogo, definimos el <strong>operador de adelanto simple</strong></p>
+<p><span class="math display">\[
+\begin{align}
+    Fz_t&amp;=z_{t+1}\\
+    F^n z_t&amp;=z_{t+n}
+\end{align}    
+\]</span></p>
+<p>El operador <span class="math inline">\(F\)</span> es el inverso del operador <span class="math inline">\(B\)</span> ya que:</p>
+<p><span class="math display">\[
+FBz_t=BFz_t=z_t
+\]</span>
+Por tanto, <span class="math inline">\(BF=FB=1,\)</span> lo que implica que <span class="math inline">\(F=B^{-1}\)</span>.</p>
+</div>
+<div id="polinomios-en-b" class="section level3">
+<h3>Polinomios en B</h3>
+<p>Sea el polinomio en el operador de retardo <span class="math inline">\(B\)</span>:
+<span class="math display">\[
+\phi_0 - \phi_1 B - \ldots - \phi_pB^p
+\]</span>
+La operación de este polinomio se define como:
+<span class="math display">\[
+(\phi_0 - \phi_1 B - \ldots - \phi_pB^p)z_t=\phi_0z_t+\phi_1z_{t-1}+\ldots+\phi_pz_{t-p}
+\]</span>
+Llamamos <strong>polinomio autorregresivo</strong> de orden <span class="math inline">\(p\)</span> al polinomio de grado <span class="math inline">\(p\)</span>
+<span class="math display">\[
+1-\phi_1B-\dots-\phi_pB^p
+\]</span>
+La razón de esta nomenclatura es que si tenemos una serie cuyo comportamiento puede expresarse como
+<span class="math display">\[
+(1-\phi_1B-\dots-\phi_pB^p)z_t=e_t
+\]</span>
+donde <span class="math inline">\(e_t\)</span> es un término de error, la anterior expresión puede escribirse como:
+<span class="math display">\[
+    z_t=\phi_1 z_{t-1}+ \ldots + \phi_p z_{t-p} + e_t
+\]</span></p>
+<p>Es decir, como una regresión donde la serie <span class="math inline">\(z_t\)</span> es el output y los propios retardos <span class="math inline">\(1,2,\ldots,p\)</span> de la variable actúan como <em>inputs</em> o regresores construyendo una <strong>autorregresión</strong>.</p>
+<p>En muchas ocasiones emplearemos las formas <span class="math inline">\(\phi(B), \psi(B), \varphi(B)\)</span> u otras semejantes para denotar polinomios en <span class="math inline">\(B\)</span>. Notaremos más adelante que asociaremos ciertas formas de expresar polinomios en <span class="math inline">\(B\)</span> como <span class="math inline">\(\phi(B)\)</span> a clases de polinomios en <span class="math inline">\(B\)</span> que juegan cierto papel especial. Por ejemplo, reservaremos la expresión <span class="math inline">\(\phi(B)\)</span> a polinomios autorregresivos.</p>
+</div>
+<div id="operador-diferencia" class="section level3">
+<h3>Operador diferencia</h3>
+<p>El operador diferencia respecto al pasado, en lo sucesivo simplemente <strong>operador diferencia</strong>, se define como:
+<span class="math display">\[
+\bigtriangledown z_t = z_t - z_{t-1},
+\]</span>
+que puede expresarse como:
+<span class="math display">\[
+\bigtriangledown z_t = z_t - z_{t-1},
+\]</span>
+que puede expresarse como
+<span class="math display">\[
+(1-B)z_t=\bigtriangledown z_t.
+\]</span>
+Por lo tanto: <span class="math inline">\(\bigtriangledown =1-B\)</span>.
+El operador de , usualmente <strong>diferencia estacional</strong>, se define como
+<span class="math display">\[
+\bigtriangledown_s z_t=z_t-z_{t-s}=(1-B^s)z_t.
+\]</span>
+Luego, <span class="math inline">\(\bigtriangledown_s=(1-B^s).\)</span></p>
+<p>Debe observarse que cuando aplicamos el operador <span class="math inline">\(B\)</span> a una serie <span class="math inline">\(S\)</span> lo que hacemos en realidad es <strong>adelantar</strong> la serie un periodo. Homólogamente, cuando aplicamos el operador <span class="math inline">\(F\)</span> a una serie <span class="math inline">\(S\)</span> <strong>retrasamos</strong> la serie un periodo.</p>
+</div>
+</div>
+<div id="alisado-exponencial" class="section level2">
+<h2>Alisado Exponencial</h2>
+<div id="que-es-el-alisado-exponencial" class="section level3">
+<h3>¿Qué es el Alisado Exponencial?</h3>
+<ul>
+<li>Es una técnica aplicada a series de tiempo, para ``suavizarlas’’ u obtener previsiones.</li>
+<li>Mientras que, con la media móvil, las observaciones pasadas se ponderan por igual, en el alisado exponencial se asignan ponderaciones exponencialmente decrecientes en el tiempo.</li>
+<li><p>La fórmula utilizada es:</p>
+<p><span class="math display">\[ y_1 = x_0  \]</span>
+<span class="math display">\[ y_t = (1-\theta)x_{t-1}+\theta y_{t-1},  t &gt; 1 \]</span></p></li>
+</ul>
+<p>donde <span class="math inline">\(\{x_t\}\)</span> son las observaciones reales, <span class="math inline">\(\{y_t\}\)</span> son las estimaciones y <span class="math inline">\(\theta\)</span> es el factor de alisamiento, <span class="math inline">\(0 &lt; \theta &lt; 1\)</span>.</p>
+<p>En otras palabras, con este método, la previsión para el periodo <span class="math inline">\(t\)</span> (valor esperado) como la suma ponderada de todas la observaciones anteriores, dando mayor importancia a las observaciones más recientes que a las más antiguas. Como puede verse en:</p>
+<p><span class="math display">\[ y_t = (1-\theta) x_{t-1} +\theta y_{t-1} \]</span>
+<span class="math display">\[ y_t = (1-\theta)x_{t-1}+(1-\theta)\theta x_{t-2}+(1-\theta) \theta^2 y_{t-2} \]</span></p>
+<p><span class="math display">\[ y_t = (1-\theta)[x_{t-1}+\theta x_{t-2}+\theta x_{t-3}+\theta x_{t-4}+ ...] + \theta^{t-1} x_0 \]</span></p>
+<p>Así, los pesos asignados a las observaciones previas pertenecen a una proporción de la progresión geométrica: <span class="math inline">\(\{1, \theta, \theta^2, \theta^3, ..\}\)</span>.</p>
+<ul>
+<li>Por otro lado, si la ecuación arriba se expresa como:</li>
+</ul>
+<p><span class="math display">\[
+                y_t = x_{t-1} + \theta(y_{t-1} - x_{t-1}) ,  
+\]</span></p>
+<p>Se aprecia que <span class="math inline">\(y_t\)</span> está formada por la suma de la observación en el periodo anterior (<span class="math inline">\(x_{t-1}\)</span>) más una proporción (<span class="math inline">\(\theta\)</span>) del error cometido (<span class="math inline">\(y_{t-1} - x_{t-1}\)</span>). Por lo tanto el valor de <span class="math inline">\(\theta\)</span> controla la rapidez con que la previsión se adapta a los cambios del nivel de la serie (estado).</p>
+<ul>
+<li>Si <span class="math inline">\(\theta\)</span> es grande (próximo a 1), la previsión se adapta rápidamente a los cambios, por lo tanto se debe utilizar en series poco estables.</li>
+<li>Si <span class="math inline">\(\theta\)</span> es pequeño (próximo a 0), se consigue eliminar el efecto de las fluctuaciones, por lo tanto se debe utilizar en series estables.</li>
+<li>El valor de <span class="math inline">\(\theta\)</span> se puede optimizar minimizando la suma de cuadrados del error de previsión, es decir, resolviendo: <span class="math inline">\(min(x_{t-1} - y_{t-1})^2\)</span>.</li>
+<li>El alisado exponencial, técnicamente, es equivalente a un modelo <em>ARIMA (0,1,1)</em> sin constante. En otras palabras, se puede representar por:
+<span class="math display">\[             \hat{y} = (1-\theta)(1 + \theta B + \theta^2 B^2 + \theta^3 B^3 + ...)x_{t-1}
+\]</span>
+donde B es el operador retardo y <span class="math inline">\(\theta\)</span> es el parámetro de amortiguamiento. Esta representación no implica recargar el último término con un peso mayor a los valores más recientes.
+Si existe un número finito de períodos observados, la ecuación anterior se reescribe como:</li>
+</ul>
+<p><span class="math display">\[ \hat{y} = \alpha (1 + \theta B + \theta^2 B^2 + ... + \theta^p B^p)x_{t-1}\]</span></p>
+<p>donde <span class="math inline">\(p\)</span> es el número de periodos disponibles y $&lt;1 $ es un término que asegura que los coeficientes de la ecuación sumen la unidad. Eso permite que el peso relativo de cada uno de los datos del pasado se mantenga constante y, al mismo tiempo, el resultado siga siendo una media.</p>
+<ul>
+<li>En la tabla abajo se muestran los pesos que toman los términos en el caso de contar con 6 términos.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center">I</th>
+<th align="right">II</th>
+<th align="right">III</th>
+<th align="right">IV</th>
+<th align="right">V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\theta\)</span></td>
+<td align="center">0.70</td>
+<td align="right">0.65</td>
+<td align="right">0.60</td>
+<td align="right">0.55</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\((1- \theta)\)</span></td>
+<td align="center">0.30</td>
+<td align="right">0.35</td>
+<td align="right">0.40</td>
+<td align="right">0.45</td>
+<td align="right">0.50</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\((1- \theta)\theta\)</span></td>
+<td align="center">0.21</td>
+<td align="right">0.23</td>
+<td align="right">0.24</td>
+<td align="right">0.25</td>
+<td align="right">0.25</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\((1- \theta)\theta^2\)</span></td>
+<td align="center">0.15</td>
+<td align="right">0.15</td>
+<td align="right">0.14</td>
+<td align="right">0.14</td>
+<td align="right">0.13</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\((1- \theta)\theta^3\)</span></td>
+<td align="center">0.10</td>
+<td align="right">0.10</td>
+<td align="right">0.09</td>
+<td align="right">0.07</td>
+<td align="right">0.06</td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math inline">\((1- \theta)\theta^4\)</span></td>
+<td align="center">0.07</td>
+<td align="right">0.06</td>
+<td align="right">0.05</td>
+<td align="right">0.04</td>
+<td align="right">0.03</td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\((1- \theta)\theta^5\)</span></td>
+<td align="center">0.05</td>
+<td align="right">0.04</td>
+<td align="right">0.03</td>
+<td align="right">0.02</td>
+<td align="right">0.02</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
