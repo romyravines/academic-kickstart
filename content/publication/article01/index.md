@@ -25,7 +25,7 @@ doi = "10.1016/j.cor.2014.06.010"
 featured = false
 
 # Tags (optional).
-tags = ["Optimization","Forecastinh"]
+tags = ["Optimization","Forecasting", "Statistics"]
 
 # Projects (optional).
 projects = []

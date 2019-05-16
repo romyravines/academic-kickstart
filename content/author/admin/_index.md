@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Technical Leader
+role: Advanced Analytics Technical Leader
 
 # Organizations/Affiliations
 organizations:
@@ -45,6 +45,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/romyravines/  
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/RavinesRomy
