@@ -31,9 +31,20 @@ links:
   name: Follow
   url: https://twitter.com/RavinesRomy
 url_code: ""
-url_pdf: "20190228.StatisticsDataScience.Romy.pdf"
+url_pdf: "/files/20190228.StatisticsDataScience.Romy.pdf"
 url_slides: ""
 url_video: ""
+
+# Set captions for image gallery.
+gallery_item:
+- album: gallery
+  caption: #UC3DataScience
+  image: UC319_01.png
+- album: gallery
+  caption: #UC3DataScience
+  image: UC319_02.png
+
+  
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -52,3 +63,11 @@ projects: []
 # Enable math on this page?
 math: true
 ---
+Masterclass representado a [Innova-tsn](https://www.innova-tsn.com/), por invitación de la Universidad Carlos III de Madrid.
+
+<object data="/files/20190228.StatisticsDataScience.Romy.pdf" type="application/pdf"
+        width="800" height="500" typemustmatch>
+  <p>You don't have a PDF plugin, but you can <a href="/files/20190228.StatisticsDataScience.Romy.pdf">download the PDF file.</a></p>
+</object>
+
+{{< gallery >}}
