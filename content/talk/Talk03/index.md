@@ -54,3 +54,9 @@ math: true
 ---
 
 
+
+<object data="/files/20190221_ITSN_SemanaSeguro_CasoTM.pdf" type="application/pdf"
+        width="800" height="600" typemustmatch>
+  <p>You don't have a PDF plugin, but you can <a href="/files/20190221_ITSN_SemanaSeguro_CasoTM.pdf">download the PDF file.</a></p>
+</object>
+
