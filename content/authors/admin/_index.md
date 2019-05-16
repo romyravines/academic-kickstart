@@ -10,11 +10,11 @@ authors:
 superuser: true
 
 # Role/position
-role: Technical Leader
+role: Statistics + Machine Learning
 
 # Organizations/Affiliations
 organizations:
-- name: Statistics + Machine Learning
+- name: Technical Expert
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
