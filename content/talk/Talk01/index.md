@@ -58,5 +58,5 @@ math: true
 [*Entrevista posterior a la ponencia *](https://t.co/Z5Iwlk5Q6t)
 
 
-[handout](/pdf/20180606.3SMadrid.InScoring.pdf)
+[handout](/files/20180606.3SMadrid.InScoring.pdf)
 
