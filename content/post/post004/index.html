@@ -1,0 +1,135 @@
+---
+title: 'Conocimiento adicional a los datos, ser Bayesiano'
+subtitle: '¿Qué es un modelo bayesiano?'
+summary: Un resumen, muy escueto, de los ingredientes del uso del Enfoque Bayesiano en un proceso de Inferencia Estadística.
+authors:
+- admin
+tags: ["Forecasting"]
+categories: ["Statistics"]
+date: "2016-04-20T00:00:00Z"
+lastmod: "2019-04-17T00:00:00Z"
+featured: false
+draft: false
+math: true
+output: 
+  html_document: 
+    keep_md: true
+    mathjax: default
+---
+
+
+
+<div id="enfoque-bayesiano" class="section level1">
+<h1>Enfoque Bayesiano</h1>
+<p><br>
+Un resumen, muy escueto, de los ingredientes del uso del Enfoque Bayesiano en un proceso de Inferencia Estadística.</p>
+<div id="inferencia-estadistica" class="section level2">
+<h2>Inferencia estadística</h2>
+<p>En problemas de inferencia estadística se dispone, en general de un conjunto de observaciones de tamaño <span class="math inline">\(n,\)</span> por ejemplo <span class="math inline">\(\mathbf{y} = (y_1, \ldots, y_n),\)</span> que se asume fueron generadas a partir de una distribución de probabilidades que depende de una cantidad <span class="math inline">\(\theta.\)</span> En muchos casos,
+<span class="math inline">\(\theta\)</span> es una cantidad fija y desconocida y es denominada <em>parámetro</em> del modelo probabilístico. El objetivo es estimar valores de <span class="math inline">\(\theta\)</span> a partir de la muestra <span class="math inline">\(\mathbf{y}.\)</span> En otras palabras, asumiendo que <span class="math inline">\(\theta \in \Theta,\)</span> se quiere saber cuales son los valores más probables de <span class="math inline">\(\theta\)</span> de haber generado las observaciones <span class="math inline">\(\mathbf{y}.\)</span></p>
+<p>Es posible estimar <span class="math inline">\(\theta\)</span> usando el enfoque bayesiano: un proceso de inferencia basado en la actualización de la información a través del <strong>teorema de Bayes</strong>. En breve, la inferencia bayesiana consiste en combinar</p>
+<ul>
+<li>la descripción de la incertidumbre del investigador sobre <span class="math inline">\(\theta\)</span>,
+antes de observar <span class="math inline">\(\mathbf{y}\)</span>, a través de una distribución de probabilidades (<strong>distribución a priori</strong>) con<br />
+</li>
+<li>la información proveniente de
+los datos (<strong>función de verosimilitud</strong>), haciendo uso del teorema de Bayes. El resultado de este procedimiento es una distribución de
+probabilidad (<strong>distribución a posteriori</strong>) y la inferencia sobre <span class="math inline">\(\theta\)</span> es realizada a través de la caracterización de esa
+distribución (Una distribución se caracteriza a través de la identificación de sus parámetros y/o de algunos estadísticos como media,
+mediana, moda, percentiles, etc.). En otras palabras, la estimación de <span class="math inline">\(\theta\)</span> consiste en la obtención de su distribución de después de
+observar <span class="math inline">\(\mathbf{y}\)</span>, <span class="math inline">\(p(\theta | \mathbf{y}),\)</span> a través de la fórmula:</li>
+</ul>
+<p><span class="math display">\[
+\underbrace{p(\theta | \mathbf{y})}_{\text{posteriori}} \propto \underbrace{p(\mathbf{y}|\theta)}_{\text{verosimilitud}} \times
+\underbrace{p(\theta)}_{\text{priori}}.
+\]</span>
+Como ejemplo considere que se desea hacer inferencia sobre la media, <span class="math inline">\(\theta\)</span>, de una variable continua, <span class="math inline">\(y\)</span>, en una determinada población. El investigador responsable considera que esa media sigue una distribución normal pero no tiene información adicional para especificar sus parámetros, luego, decide que a priori <span class="math inline">\(\theta\)</span> sigue una distribución normal estándar, <span class="math inline">\(N(0,1)\)</span>. Para estimar <span class="math inline">\(\theta,\)</span> se recoge una muestra de unidades de la población en estudio y se observa que esos datos se pueden representar a través de una distribución normal com media <span class="math inline">\(4\)</span> y varianza <span class="math inline">\(1\)</span>, luego, la función de verosimilitud es <span class="math inline">\(N(4,1).\)</span> Con base en esta muestra, el investigador actualiza su información sobre <span class="math inline">\(\theta\)</span>
+y después de la aplicación de la fórmula anterior confirma que esa media tiene distribución normal pero ahora sabe que los parámetros de esa distribución (a posteriori) son <span class="math inline">\(2\)</span> y <span class="math inline">\(0.5\)</span>. En otras palabras, el proceso de inferencia utilizado conduce a la conclusión que el valor más probable para la media de esa variable es <span class="math inline">\(2\)</span> y que el intervalo de 95% de confianza de todos sus valores posibles es <span class="math inline">\(2 \pm 1.96 \times \sqrt{0.5}.\)</span> La figura abajo representa las distribuciones utilizadas en este ejemplo.</p>
+<p><img src="/post/post004/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Otro ejemplo puede ser la estimación de la probabilidad de éxito de determinado evento. En este caso, como una probabilidad está entre 0 y 1, la distribución beta es apropriada para describir los probables valores:</p>
+<p><img src="/post/post004/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Además del ajuste de modelos a datos observados, otro interés en inferencia estadística es la estimación o previsión de observaciones no observadas o futuras. Desde el punto de vista bayesiano, esto se realiza con base en la distribución predictiva. Por ejemplo, si se desea predecir el vector <span class="math inline">\(y^*\)</span> condicional a los valores observados <span class="math inline">\(\mathbf{y},\)</span> la distribución predictiva es
+<span class="math display">\[
+p(y^* | \mathbf{y}) = \int_\Theta p(y^* |\mathbf{y},\theta)p(\theta | \mathbf{y}) d\theta. 
+\]</span>
+Luego, <span class="math inline">\(p(y^* | \mathbf{y})\)</span> es la distribución que se debe caracterizar para obtener las estimaciones puntuales y por intervalo de <span class="math inline">\(y^*.\)</span></p>
+<p>El grado de conocimiento del modelador de las valores que puede adoptar un parámetro de un modelo, se expresa con la varianza de la distribución a priori. La figura abajo muestra algunos casos de distribución a posteriori con diferentes distribuciones a priori.</p>
+<p><img src='/post/post004/model_bayes.png' alt="Model" style="float:width:50%;"></p>
+</div>
+<div id="mcmc" class="section level2">
+<h2>MCMC</h2>
+<p>Después de aplicar el teorema de Bayes, se identifica la distribución a posteriori de <span class="math inline">\(\theta\)</span> a través del núcleo de la densidad resultante. El problema es que no siempre se obtiene un núcleo
+pertenece a una densidad conocida e inclusive la integral en dicho resultado sólo puede ser resuelta por métodos numéricos. Recién en los
+últimos <span class="math inline">\(25\)</span> años se vienen desarrollando técnicas de <strong>simulación estocástica</strong> que permiten, de manera relativamente simple, obtener muestras de las distribuciones de interés, lo que ha dado un grande impulso al al uso de la inferencia bayesiana. En particular, los métodos de Monte Carlo
+via Cadenas de Markov (<em>MCMC</em>) están recibiendo gran atención. Un <em>MCMC</em>, para simular de una densidad <span class="math inline">\(p(\cdot),\)</span> es cualquier método que produzca una cadena de Markov homogénea, ergódica e irreductible, cuya distribución estacionaria sea la distribución de interés <span class="math inline">\((p(\cdot))\)</span>. En el caso
+del ajuste de modelos, la distribución objetivo es la distribución a posteriori <span class="math inline">\(p(\theta | \mathbf{y})\)</span> y/o la distribución predictiva <span class="math inline">\(p(y^* |\mathbf{y})\)</span></p>
+<p>En particular, en la inferencia bayesiana, los métodos <em>MCMC</em> son utilizados para generar muestras de la distribución
+a posteriori de los parámetros. En la práctica, una vez que las cadenas generadas alcanzan la convergencia, se considera que los valores generados son muestras de ñas distribución de interés.</p>
+<p>Existen varios métodos propuestos para la construcción de una cadena de Markov. Los dos más conocidos son (1) el algoritmo de
+Metropolis-Hastings y (2) el muestreador de Gibbs. La implementación de los algoritmos
+MCMC puede no ser una tarea fácil si el modelo es muy complejo. En este informe no se dan detalles sobre
+cada uno de estos algoritmos, una buena referencia sobre éstos y otros métodos MCMC es Gamerman &amp; Lopes, 2006.</p>
+<div id="gibbs-sampling" class="section level3">
+<h3>Gibbs Sampling</h3>
+<p>Consiste en:</p>
+<ol style="list-style-type: decimal">
+<li>Dar valores iniciales a los parámetros desconocidos.</li>
+<li>Muestrear valores de las densidades condicionales
+completas de cada parámetro, respetando un orden de muestreo y condicionando el muestreo al último valor generado de los otros parámetros.</li>
+<li>Repetir el paso 2 <span class="math inline">\(N\)</span> veces.</li>
+</ol>
+</div>
+<div id="metropolis-hastings" class="section level3">
+<h3>Metropolis-Hastings</h3>
+<p>Se utiliza cuando las densidades condicionales completas no tienen forma cerrada conocida. El algoritmo fue
+originalmente propuesto por Metropolis et. al , 1953 y modificado por Hastings, 1970. Suponga que <span class="math inline">\(\pi(x)\)</span> es la densidad de interés y <span class="math inline">\(x\)</span> es el valor actual de la cadena de Markov. El algoritmo de
+Metropolis-Hastings consiste en:</p>
+<ol style="list-style-type: decimal">
+<li>Generar un valor candidato, <span class="math inline">\(x^*\)</span>, a partir de una densidad
+propuesta, o núcleo de transición, <span class="math inline">\(q(x^{*}|x)\)</span></li>
+<li>Aceptar el valor generado con probabilidad
+<span class="math inline">\(\min \Bigl \{ 1, \dfrac{\pi(x^*)q(x|x^*)}{\pi(x)q(x^{*}|x)} \Bigr \}.\)</span></li>
+</ol>
+<p>En general, en la práctica, un paso de Metropolis-Hastings se inserta dentro del Gibbs para generar las
+muestras. La densidad <span class="math inline">\(q(\cdot)\)</span> debe ser relativamente simple de muestrear. La tasa de convergencia depende de la
+proximidad entre <span class="math inline">\(\pi(\cdot)\)</span> y <span class="math inline">\(q(\cdot)\)</span>.</p>
+</div>
+<div id="slice-sampling" class="section level3">
+<h3>Slice sampling</h3>
+<p>Es un método para generar valores de distribuciones que tomem valores en un intervalo cerrado y limitado. Suponga que <span class="math inline">\(\pi(x),\,\, x \in A \subseteq \mathbb{R}\)</span> es la densidad de interés. La idea básica es generar
+valores de la ddistribución uniforme definida por la región abajo de <span class="math inline">\(\pi(x)\)</span>, y considerar
+apenas las coordenadas horizontales. Específicamente, considere la región bi-dimensional abajo de
+<span class="math inline">\(\pi(x)\)</span> o de <span class="math inline">\(g(x)=c \pi(x)\)</span>, entonces:</p>
+<ul>
+<li>Sea <span class="math inline">\(z\)</span> una variable auxiliar tal que <span class="math inline">\(z | x\sim U(0,g(x));\)</span></li>
+<li>La distribución conjunta de <span class="math inline">\((z,x)\)</span> es
+uniforme en la región <span class="math inline">\(\{(z,x):0\leq z\leq g(x)\}\)</span> con densidad</li>
+</ul>
+<p><span class="math inline">\(p(z,x)=\begin{cases}  \displaystyle\frac{1}{c} &amp; \text{si}\,\,\, 0\leq z\leq g(x) \\  0 &amp; \text{caso contrario}.  \end{cases}\)</span></p>
+<ul>
+<li>La distribución condicional de <span class="math inline">\(x | z\)</span> es
+<span class="math inline">\(p(x | z)\propto p(z,x)\)</span>, es decir,
+$(x | z) U(S(z)) $, donde <span class="math inline">\(S(z)=\{x:g(x)\geq z\}\)</span>. Luego, <span class="math inline">\(S(x)\)</span> es la unión de los intervalos que constituye
+la porción (<em>slice</em>) a través de la densidad definida por <span class="math inline">\(z\)</span>.</li>
+</ul>
+<p>La estructura anterior conduce a simular <span class="math inline">\(x\)</span> y $z $ usando Gibbs:</p>
+<ul>
+<li>Generar <span class="math inline">\(z^{(i)}\sim U(0,g(x^{(i-1)}))\)</span></li>
+<li>Generar <span class="math inline">\(x^{(i)}\sim U(S(z^{(i)}))\)</span>,</li>
+</ul>
+<p>donde el índice <span class="math inline">\((i)\)</span> denota la <span class="math inline">\(i-\)</span>ésima iteración y <span class="math inline">\(S(z^{(i)})=\{x:g(x)\geq z^{(i)}\}\)</span>. Entre las ventajas de ese método están: Se aplica a muchas distribuciones, no es necesario especificar una densidad propuesta como en Metropolis-Hastings y sólo utiliza la distribución
+uniforme para generar los valores. La principal desventaja es que la determinación de <span class="math inline">\(S(z)\)</span> puede ser ser difícil.</p>
+</div>
+</div>
+<div id="ejemplo-de-gibbs" class="section level2">
+<h2>Ejemplo de Gibbs</h2>
+<p>Suponga que se desea generar una muestra de la distribución normal bivariada (cada marginal es N(0,1)), usando Gibbs sampling.
+En este caso, la distribución conjunta está dada por:
+<span class="math inline">\(\mathbf{x}=(x_1,x_2) \sim N(\mathbf{m},\mathbf{S})\)</span> donde <span class="math inline">\(\mathbf{m}=(m1,m2)&#39;\)</span> y <span class="math inline">\(\begin{pmatrix} s_1 &amp; s_{12} \\ s_{21} &amp; s_2 \end{pmatrix}.\)</span>
+Mientras que las condicionales completas son:
+<span class="math display">\[x_1|x_2 \sim N(m_1+(s_{12}/s_2)\times(x_2-m_2);s_1-s_{12}s_{21}/s_2)\]</span>
+<span class="math display">\[x_2|x_1 \sim N(m_2+(s_{21}/s_1)\times(x_1-m_1);s_2-s_{21}s_{12}/s_1)\]</span></p>
+<p>La figura abajo muestra la evolución de las muestras generadas con Gibbs. Puede apreciarse que la cadena converge rápidamente a la zona de interés y que cuando mayor el tamaño de la muestra, mejor representada está la densidad que se desea aproximar. También se presentan los resultados como distribuciones marginales, se puede verificar la eficacia del proceso de simulación estocática.</p>
+<p><img src="/post/post004/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /><img src="/post/post004/index_files/figure-html/unnamed-chunk-3-2.png" width="672" /></p>
+</div>
+</div>

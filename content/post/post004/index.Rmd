@@ -1,0 +1,282 @@
+---
+title: 'Conocimiento adicional a los datos, ser Bayesiano'
+subtitle: '¿Qué es un modelo bayesiano?'
+summary: Un resumen, muy escueto, de los ingredientes del uso del Enfoque Bayesiano en un proceso de Inferencia Estadística.
+authors:
+- admin
+tags: ["Forecasting"]
+categories: ["Statistics"]
+date: "2016-04-20T00:00:00Z"
+lastmod: "2019-04-17T00:00:00Z"
+featured: false
+draft: false
+math: true
+output: 
+  html_document: 
+    keep_md: true
+    mathjax: default
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE,}
+#options(rcharts.mode = 'iframe', rcharts.cdn = TRUE)
+knitr::opts_chunk$set(results = "asis", comment = F,echo = TRUE)
+```
+
+# Enfoque Bayesiano 
+
+<br>
+Un resumen, muy escueto, de los ingredientes del uso del Enfoque Bayesiano en un proceso de Inferencia Estadística.
+
+
+## Inferencia estadística
+
+En problemas de inferencia estadística se dispone, en general de un conjunto de observaciones de tamaño $n,$ por ejemplo $\mathbf{y} = (y_1, \ldots, y_n),$ que se asume fueron generadas a partir de una distribución de probabilidades que depende de una cantidad $\theta.$ En muchos casos,
+$\theta$ es una cantidad fija y desconocida y es denominada *parámetro* del modelo probabilístico.  El objetivo es estimar valores  de $\theta$ a partir de la muestra $\mathbf{y}.$ En otras palabras, asumiendo que $\theta \in \Theta,$ se quiere saber cuales son los valores más probables de $\theta$ de haber generado las observaciones $\mathbf{y}.$
+
+Es posible estimar $\theta$ usando el enfoque bayesiano: un proceso de inferencia basado en la actualización de la información a través del **teorema de Bayes**. En breve, la inferencia bayesiana consiste en combinar 
+ 
+ * la descripción de la incertidumbre del investigador sobre $\theta$,
+antes de observar $\mathbf{y}$, a través de una distribución de probabilidades  (**distribución a priori**) con  
+ * la información proveniente de
+los datos (**función de verosimilitud**), haciendo uso del teorema de Bayes. El resultado de este procedimiento es una distribución de
+probabilidad (**distribución a posteriori**) y la inferencia sobre $\theta$ es realizada a través de la caracterización de esa
+distribución (Una distribución se caracteriza a través de la identificación de sus parámetros y/o de algunos estadísticos como media,
+mediana, moda, percentiles, etc.). En otras palabras, la estimación de $\theta$ consiste en la obtención de su distribución de después de
+observar $\mathbf{y}$, $p(\theta | \mathbf{y}),$ a través de la fórmula:
+
+$$
+\underbrace{p(\theta | \mathbf{y})}_{\text{posteriori}} \propto \underbrace{p(\mathbf{y}|\theta)}_{\text{verosimilitud}} \times
+\underbrace{p(\theta)}_{\text{priori}}.
+$$
+Como ejemplo considere que se desea hacer inferencia sobre la media, $\theta$, de una variable continua, $y$, en una determinada población. El investigador responsable considera que esa media sigue una distribución normal pero no tiene información adicional para especificar sus parámetros, luego, decide que a priori $\theta$ sigue una distribución normal estándar, $N(0,1)$. Para estimar $\theta,$ se recoge una muestra de unidades de la población en estudio y se observa que esos datos se pueden representar a través de una distribución normal com media $4$ y varianza $1$, luego, la función de verosimilitud es $N(4,1).$ Con base en esta muestra, el investigador actualiza su información sobre $\theta$
+y después de la aplicación de la fórmula anterior confirma que esa media tiene distribución normal pero ahora sabe que los parámetros de esa distribución (a posteriori) son $2$ y $0.5$. En otras palabras, el proceso de inferencia utilizado conduce a la conclusión que el valor más probable para la media de esa variable es $2$ y que el intervalo de 95\% de confianza de todos sus valores posibles es $2 \pm 1.96 \times
+\sqrt{0.5}.$ La figura abajo representa las distribuciones utilizadas en este ejemplo.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
+
+x = seq(-4, 8, .001) ##Set up for creating the distributions
+
+y1 = dnorm(x, 0, 1) # data for prior curve
+y3 = dnorm(x, 2, 0.5) # data for posterior curve
+y2 = dnorm(x, 4, 1) # data for likelihood curve, plotted as the posterior from a beta(1,1)
+y.max = 0.8
+
+plot(x, y1, xlim=c(-4,8), ylim=c(0, y.max), type = "l", ylab= "Density", lty = 1,
+     xlab= "Expected Value", las=1, main="Example 1: Expected value",lwd=2,
+     cex.lab=0.8, cex.main=0.8, col = "#32b4f7", axes=FALSE)
+
+axis(1, col="grey") #adds custom x axis
+axis(2, las=1,col="grey") # custom y axis
+
+lines(x, y2, type = "l", col = "#fda601", lwd = 2, lty = 1)
+lines(x, y3, type = "l", col = "#07077e", lwd = 2, lty = 1)
+legend("topleft", c("Prior = N(0.1)", "Posterior = N(2,0.5)", "Likelihood = N(4,1)"), col = c("#32b4f7","#07077e", "#fda601"), lty = c(1,1,1), lwd = c(2,2,2), bty = "n")
+```
+
+
+Otro ejemplo puede ser la estimación de la probabilidad de éxito de determinado evento. En este caso, como una probabilidad está entre 0 y 1, la distribución beta es apropriada para describir los probables valores: 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
+PS = 40
+PF = 37
+k = 20
+n = 25
+
+x = seq(.001, .999, .001) ##Set up for creating the distributions
+
+y1 = dbeta(x, PS, PF) # data for prior curve
+y3 = dbeta(x, PS + k, PF + n - k) # data for posterior curve
+y2 = dbeta(x, 1 + k, 1 + n - k) # data for likelihood curve, plotted as the posterior from a beta(1,1)
+y.max = 10
+
+plot(x, y1, xlim=c(0,1), ylim=c(0, y.max), type = "l", ylab= "Density", lty = 1,
+     xlab= "Probability of success", las=1, main="Example 2: Probability of Sucess",lwd=2,
+     cex.lab=0.8, cex.main=0.8, col = "#32b4f7", axes=FALSE)
+
+axis(1, at = seq(0,1,.2),col="grey") #adds custom x axis
+axis(2, las=1,col="grey") # custom y axis
+
+lines(x, y2, type = "l", col = "#fda601", lwd = 2, lty = 1)
+lines(x, y3, type = "l", col = "#07077e", lwd = 2, lty = 1)
+legend("topleft", c("Prior = Beta(40,37)", "Posterior = Beta(60,42)", "Likelihood = Beta(21,6)"), col = c("#32b4f7","#07077e", "#fda601"), 
+       lty = c(1,1,1), lwd = c(2,2,2), bty = "n")
+```
+
+
+
+Además del ajuste de modelos a datos observados, otro interés en inferencia estadística es la estimación o previsión de observaciones no observadas o futuras. Desde el punto de vista bayesiano, esto se realiza con base en la distribución predictiva. Por ejemplo, si se desea predecir el vector $y^*$ condicional a los valores observados $\mathbf{y},$ la distribución predictiva es
+$$
+p(y^* | \mathbf{y}) = \int_\Theta p(y^* |\mathbf{y},\theta)p(\theta | \mathbf{y}) d\theta. 
+$$
+Luego, $p(y^* | \mathbf{y})$ es la distribución que se debe caracterizar para obtener las estimaciones puntuales y por intervalo de $y^*.$
+
+El grado de conocimiento del modelador de las valores que puede adoptar un parámetro de un modelo, se expresa con la varianza de la distribución a priori. La figura abajo muestra algunos casos de distribución a posteriori con diferentes distribuciones a priori.
+
+
+<img src='/post/post004/model_bayes.png' alt="Model" style="float:width:50%;">
+
+
+## MCMC
+
+Después de aplicar el teorema de Bayes, se identifica la distribución a posteriori de $\theta$ a través del núcleo de la densidad resultante. El problema es que no siempre se obtiene un núcleo
+pertenece a una densidad conocida e inclusive la integral en dicho resultado sólo puede ser resuelta por métodos numéricos. Recién en los
+últimos $25$ años se vienen desarrollando técnicas de **simulación estocástica** que permiten, de manera relativamente simple, obtener muestras de las distribuciones de interés, lo que ha dado un grande impulso al al uso de la inferencia bayesiana. En particular, los métodos de Monte Carlo
+via Cadenas de Markov (*MCMC*) están recibiendo gran atención. Un *MCMC*, para simular de una densidad $p(\cdot),$ es cualquier método que produzca una cadena de Markov homogénea, ergódica e irreductible, cuya distribución estacionaria sea la distribución de interés $(p(\cdot))$. En el caso
+del ajuste de modelos, la distribución objetivo es la distribución a posteriori $p(\theta | \mathbf{y})$ y/o la distribución predictiva $p(y^* |\mathbf{y})$
+
+
+
+En particular, en la inferencia bayesiana, los métodos *MCMC* son utilizados para generar muestras de la distribución
+a posteriori de los parámetros. En la práctica, una vez que las cadenas generadas alcanzan la convergencia, se considera que los valores generados son muestras de ñas distribución de interés.
+
+Existen varios métodos propuestos para la construcción de una cadena de Markov. Los dos más conocidos son (1) el algoritmo de
+Metropolis-Hastings y (2) el muestreador de Gibbs. La implementación de los algoritmos
+MCMC puede no ser una tarea fácil si el modelo es muy complejo. En este informe no se dan detalles sobre
+cada uno de estos algoritmos, una buena referencia sobre éstos y otros métodos MCMC es Gamerman \& Lopes, 2006. 
+
+### Gibbs Sampling 
+
+Consiste en:
+
+ 1. Dar valores iniciales a los parámetros desconocidos.
+ 1. Muestrear valores de las densidades condicionales
+completas de cada parámetro, respetando un orden de muestreo y condicionando el muestreo al último valor generado de los otros parámetros.
+ 1. Repetir el paso 2 $N$ veces.
+
+### Metropolis-Hastings
+
+Se utiliza cuando las densidades condicionales completas no tienen forma cerrada conocida. El algoritmo fue
+originalmente propuesto por Metropolis et. al , 1953 y modificado por Hastings, 1970. Suponga que $\pi(x)$ es la densidad de interés y $x$ es el valor actual de la cadena de Markov. El algoritmo de
+Metropolis-Hastings consiste en:
+
+ 1. Generar un valor candidato, $x^*$, a partir de una densidad
+propuesta, o núcleo de transición, $q(x^{*}|x)$
+ 1. Aceptar el valor generado con probabilidad
+$\min \Bigl \{ 1, \dfrac{\pi(x^*)q(x|x^*)}{\pi(x)q(x^{*}|x)} \Bigr \}.$
+
+En general, en la práctica, un paso de  Metropolis-Hastings se inserta dentro del Gibbs para generar las
+muestras. La densidad $q(\cdot)$ debe ser relativamente simple de muestrear. La tasa de convergencia depende de la
+proximidad entre $\pi(\cdot)$ y $q(\cdot)$.
+
+### Slice sampling
+
+Es un método para generar valores de distribuciones que tomem valores en un  intervalo cerrado y limitado. Suponga que $\pi(x),\,\, x \in A \subseteq \mathbb{R}$ es la densidad de interés. La idea básica es generar
+valores de la ddistribución uniforme definida por la región abajo de $\pi(x)$, y considerar
+apenas las coordenadas horizontales. Específicamente, considere la región bi-dimensional abajo de
+$\pi(x)$ o de $g(x)=c \pi(x)$, entonces:
+
+
+ * Sea $z$ una variable auxiliar tal que $z | x\sim U(0,g(x));$
+ * La distribución conjunta de $(z,x)$ es
+uniforme en la región $\{(z,x):0\leq z\leq g(x)\}$ con densidad
+
+ $p(z,x)=\begin{cases}
+    \displaystyle\frac{1}{c} & \text{si}\,\,\, 0\leq z\leq g(x) \\
+    0 & \text{caso contrario}.
+  \end{cases}$
+
+ * La distribución condicional de $x | z$ es
+$p(x | z)\propto p(z,x)$, es decir,
+  $(x | z) \sim U(S(z)) $, donde $S(z)=\{x:g(x)\geq z\}$. Luego, $S(x)$ es la unión de los intervalos que constituye
+  la porción (*slice*) a través de la densidad  definida por $z$.
+
+  La estructura anterior conduce a simular $x$ y $z $ usando Gibbs:
+  
+  * Generar $z^{(i)}\sim U(0,g(x^{(i-1)}))$
+  * Generar $x^{(i)}\sim U(S(z^{(i)}))$,
+  
+donde el índice $(i)$ denota la $i-$ésima iteración y $S(z^{(i)})=\{x:g(x)\geq z^{(i)}\}$. Entre las ventajas de ese método están: Se aplica a muchas distribuciones, no es necesario especificar una densidad propuesta como en Metropolis-Hastings y sólo utiliza la distribución
+ uniforme para generar los valores. La principal desventaja es que la determinación de $S(z)$ puede ser ser difícil.
+
+
+## Ejemplo de Gibbs
+
+Suponga que se desea generar una muestra de la distribución normal bivariada (cada marginal es N(0,1)), usando Gibbs sampling.
+En este caso, la distribución conjunta está dada por:
+$\mathbf{x}=(x_1,x_2) \sim N(\mathbf{m},\mathbf{S})$  donde $\mathbf{m}=(m1,m2)'$ y $\begin{pmatrix} s_1 &
+s_{12} \\ s_{21}  & s_2 \end{pmatrix}.$ 
+Mientras que las condicionales completas son:
+$$x_1|x_2 \sim N(m_1+(s_{12}/s_2)\times(x_2-m_2);s_1-s_{12}s_{21}/s_2)$$
+$$x_2|x_1 \sim N(m_2+(s_{21}/s_1)\times(x_1-m_1);s_2-s_{21}s_{12}/s_1)$$
+
+
+La figura abajo muestra la evolución de las muestras generadas con Gibbs. Puede apreciarse que la cadena converge rápidamente a la zona de interés y que cuando mayor el tamaño de la muestra, mejor representada está la densidad que se desea aproximar. También se presentan los resultados como distribuciones marginales, se puede verificar la eficacia del proceso de simulación estocática.
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, comment=FALSE, results="hide"}
+
+#install.packages("mvtnorm")
+require(mvtnorm)
+
+
+m1  = c(0,0)
+S1  = matrix(c(1,-0.95,-0.95,1),2,2)
+N   = 100
+th1 = seq(-5,5,length=N)
+th2 = seq(-5,5,length=N)
+den = matrix(0,N,N)
+for (i in 1:N)
+  for (j in 1:N)
+    den[i,j] = dmvnorm(c(th1[i],th2[j]),m1,S1)
+
+# Gibbs sampler
+set.seed(16168)
+lag   = 20
+M0    = 1000
+M     = 1000
+niter = M0+lag*M
+ths   = matrix(c(-5,5,-5,-5,5,-5,5,5),4,2,byrow=T)
+th.g  = array(0,c(4,niter,2))
+th    = rep(0,2)
+for (i in 1:4){
+  th.g[i,1,] = ths[i,]
+  for (iter in 2:niter){
+    mean  = m1[1]+S1[1,2]/S1[2,2]*(th[2]-m1[2])
+    var   = S1[1,1]-S1[1,2]^2/S1[2,2]
+    th[1] = rnorm(1,mean,sqrt(var)) 
+    mean  = m1[2]+S1[2,1]/S1[1,1]*(th[1]-m1[1])
+    var   = S1[2,2]-S1[2,1]^2/S1[1,1]
+    th[2] = rnorm(1,mean,sqrt(var)) 
+    th.g[i,iter,] = th
+  }
+}
+
+par(mfrow=c(2,2))
+i = 1
+ind = 1:10
+plot(th.g[i,ind,],xlim=range(th.g),ylim=range(th.g),
+     xlab=expression(theta[1]),ylab=expression(theta[2]),pch=16,type="s",col="#32b4f7")
+contour(th1,th2,den,col="#07077e",add=TRUE,drawlabels=FALSE)
+
+ind = 1:100
+plot(th.g[i,ind,],xlim=range(th.g),ylim=range(th.g),
+     xlab=expression(theta[1]),ylab=expression(theta[2]),pch=16,type="s",col="#32b4f7")
+contour(th1,th2,den,col="#07077e",add=TRUE,drawlabels=FALSE)
+ind = 1:1000
+plot(th.g[i,ind,],xlim=range(th.g),ylim=range(th.g),
+     xlab=expression(theta[1]),ylab=expression(theta[2]),pch=16,type="s",col="#32b4f7")
+contour(th1,th2,den,col="#07077e",add=TRUE,drawlabels=FALSE)
+ind = 1:10000
+plot(th.g[i,ind,],xlim=range(th.g),ylim=range(th.g),
+     xlab=expression(theta[1]),ylab=expression(theta[2]),pch=16,type="s",col="#32b4f7")
+contour(th1,th2,den,col="#07077e",add=TRUE,drawlabels=FALSE)
+
+
+# Posterior inference
+ind = seq(M0+1,niter,by=lag)
+ths = rbind(th.g[1,ind,],
+            th.g[2,ind,],
+            th.g[3,ind,],
+            th.g[4,ind,])
+
+par(mfrow=c(1,2))
+xxx = seq(-4.5,4.5,length=1000)
+hist(ths[,1],xlab="",main=expression(theta[1]),prob=TRUE,breaks=seq(min(xxx),max(xxx),length=20),
+     ylim=c(0,0.45),col="#32b4f7",cex.lab=0.8,cex.axis=0.8)
+lines(xxx,dnorm(xxx),col="#07077e",lwd=3)
+hist(ths[,2],xlab="",main=expression(theta[1]),prob=TRUE,breaks=seq(min(xxx),max(xxx),length=20),
+     ylim=c(0,0.45),col="#32b4f7",cex.lab=0.8,cex.axis=0.8)
+lines(xxx,dnorm(xxx),col="#07077e",lwd=3)
+```
+
