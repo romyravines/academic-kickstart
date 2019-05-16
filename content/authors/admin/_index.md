@@ -21,9 +21,9 @@ organizations:
 bio: Entender, Modelizar, Predecir = Aprender y extraer valor de los datos para personas y organizaciones.
 
 interests:
-- Machine Learning & IA
 - Estadística
 - Econometría
+- Machine Learning
 - Infoque Bayesiano
 
 education:
