@@ -64,9 +64,7 @@ En las secciones siguiente se describen brevemente algunos conceptos necesarios 
 
 El operador de retardo simple se define como
 
-$$
-Bz_t=z_{t-1}
-$$
+$$Bz_t=z_{t-1}$$
 
 Si aplicamos el operador de retardo dos veces:
 
