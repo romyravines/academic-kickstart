@@ -23,8 +23,9 @@ projects: []
 
 ---
 
- > Una serie temporal (o simplemente una serie) es una secuencia de N observaciones ordenadas y equidistantes cronológicamente sobre una característica o varias características de una unidad observable en diferentes momentos. 
- 
+{{% alert note %}}
+Una serie temporal (o simplemente una serie) es una secuencia de N observaciones ordenadas y equidistantes cronológicamente sobre una característica o varias características de una unidad observable en diferentes momentos. 
+{{% /alert %}} 
 
  * Si la serie es sobre una característica se dice que es univariante o escalar. 
  * Si la serie es sobre dos o más características se dice que es multivariante o vectorial.
@@ -62,16 +63,28 @@ En las secciones siguiente se describen brevemente algunos conceptos necesarios 
 ### Operador de retardo simple
 
 El **operador de retardo simple** se define como
-$$Bz_t=z_{t-1}$$
+
+$$
+\begin{equation}
+Bz_t=z_{t-1}
+\end{equation}
+$$
+
 Si aplicamos el operador de retardo dos veces:
+
 $$BBz_t=Bz_{t-1}=z_{t-2}$$
+
 Del mismo modo, si aplicamos $n$ veces el operador de retardo, obtenemos:
+
 $$ BB \ldots Bz_t=z_{t-n} $$
+
 Definimos, por tanto
+
 $$ B^n z_t=z_{t-n} $$
 
 ### Operador de adelanto simple
 De modo análogo, definimos el **operador de adelanto simple**
+
 $$
 \begin{align}
     Fz_t&=z_{t+1}\\
@@ -80,6 +93,7 @@ $$
 $$
 
 El operador $F$ es el inverso del operador $B$ ya que:
+
 $$
 FBz_t=BFz_t=z_t
 $$
