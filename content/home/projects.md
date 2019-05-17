@@ -10,10 +10,10 @@ subtitle = "Soluciones Reales para Desafíos Reales"
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "post"
+  page_type = "project"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 4
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
