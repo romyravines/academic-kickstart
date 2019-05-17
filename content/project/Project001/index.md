@@ -1,5 +1,5 @@
 ---
-title: MARKETING MIX MODELS
+title: Modelos de Marketing Mix
 summary: Analizando el impacto de las acciones de marketing
 tags: ["Market" ,"Forecasting", "Bayesian"]
 categories: ["Marketing","Retail"]
@@ -16,11 +16,8 @@ url_slides: ""
 url_video: ""
 
 # Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
 slides: ""
 ---
 
 Understanding the impact on sales caused by changes in internal factors (investment in media or number of coolers by sales point), and in external factors (drop in temperatures or in private consumption).
+S
