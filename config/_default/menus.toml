@@ -10,12 +10,12 @@
 
 [[main]]
   name = "Píldoras"
-  url = "#posts"
+  url = "#posts_pildoras"
   weight = 20
 
 [[main]]
   name = "Historias"
-  url = "#projects"
+  url = "#posts_historias"
   weight = 30
 
 [[main]]
