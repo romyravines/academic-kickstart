@@ -12,7 +12,7 @@ subtitle = "Notas sobre temas relacionados con Estadística y Machine Learning"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "project"
+  page_type = "post"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 4
@@ -25,7 +25,7 @@ subtitle = "Notas sobre temas relacionados con Estadística y Machine Learning"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
+    tag = ["Forecasting"]
     category = ""
     publication_type = ""
     exclude_featured = false
