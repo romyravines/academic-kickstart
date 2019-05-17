@@ -1,7 +1,7 @@
 ---
 title: MARKETING MIX MODELS
 summary: Analizando el impacto de las acciones de marketing
-tags: ["Market" ,"Demand Forecasting", "Bayesian Inference"]
+tags: ["Market" ,"Forecasting", "Bayesian"]
 categories: ["Marketing","Retail"]
 date: "2014-04-01T00:00:00Z"
 

@@ -1,7 +1,7 @@
 ---
-title: BEHAVIOURAL SEGMENTATION
+title: Segmentación Comportamental en Retail
 summary: Una segmentación dinámica que sugiere acciones.
-tags: ["Clients", Machine Learning", "Analytics", "Segmentation"]
+tags: ["Clients", "Machine Learning", "Analytics", "Segmentation"]
 categories: ["Marketing","Retail","Clients"]
 
 date: "2011-04-01T00:00:00Z"
