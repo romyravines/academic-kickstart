@@ -12,9 +12,6 @@ subtitle = "Soluciones Reales para Desafíos Reales"
   # Page type to display. E.g. project.
   page_type = "project"
 
-  # Choose how much pages you would like to display (0 = all pages)
-  count = 3
-  
   # Filter toolbar (optional).
   # Add or remove as many filters (`[[content.filter_button]]` instances) as you like.
   # To show all items, set `tag` to "*".
@@ -47,13 +44,13 @@ subtitle = "Soluciones Reales para Desafíos Reales"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "1"
+  columns = "2"
 
   # Toggle between the various page layout types.
   #   1 = List
   #   3 = Card
   #   5 = Showcase
-  view = 1
+  view = 3
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false
