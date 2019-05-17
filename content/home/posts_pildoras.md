@@ -25,9 +25,9 @@ subtitle = "Notas sobre temas relacionados con Estadística y Machine Learning"
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = 
+    tag = ""
     category = ""
-    publication_type = "post"
+    publication_type = ""
     exclude_featured = false
   
 [design]

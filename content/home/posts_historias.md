@@ -27,7 +27,7 @@ subtitle = "Notas sobre temas relacionados con Estadística y Machine Learning"
   [content.filters]
     tag = ""
     category = ""
-    publication_type = "project"
+    publication_type = ""
     exclude_featured = false
   
 [design]
