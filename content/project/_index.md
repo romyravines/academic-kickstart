@@ -1,7 +1,6 @@
 ---
-title: Historias
+title: Courses
 
-view: 2
 # Optional header image (relative to `static/img/` folder).
 header:
   caption: ""
