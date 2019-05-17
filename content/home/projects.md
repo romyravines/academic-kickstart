@@ -1,6 +1,6 @@
 +++
 # A Projects section created with the Portfolio widget.
-widget = "portfolio"  # 
+widget = "pages"  #portfolio
 headless = true  # 
 active = true  # 
 weight = 65  # 
