@@ -8,7 +8,7 @@ active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
 title = "Historias"
-subtitle = "Notas sobre temas relacionados con Estadística y Machine Learning"
+subtitle = "Soluciones Ideales para Desafíos Reales"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
