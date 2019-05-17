@@ -25,7 +25,7 @@ projects: []
 
 Entre marzo de 2002 y diciembre de 2006, realicé mi Doctorado en Estadística en el Departamento de Métodos Estadísticos [DME](http://www.dme.ufrj.br/) de la Universidad Federal de Rio de Janeiro [UFRJ](https://ufrj.br/). 
 
-Mis orientadores fueron [Helio S. Migon]()https://www.researchgate.net/profile/Helio_Migon y [Alexandra M. Schmidt](http://alex-schmidt.research.mcgill.ca/). 
+Mis orientadores fueron [Helio S. Migon](https://www.researchgate.net/profile/Helio_Migon) y [Alexandra M. Schmidt](http://alex-schmidt.research.mcgill.ca/). 
 
 El título de la tesis (en portugues) es:*Um Esquema Eficiente de Amostragem em Modelos Dinâmicos Generalizados com Aplicações em Funções de Transferência*. El fichero pdf puede ser descargado desde el [site](http://www.pg.im.ufrj.br/teses/Estatistica/Doutorado/005.pdf) del área de Posgraduaçao del Instituto de Matemática de la UFRJ.
 

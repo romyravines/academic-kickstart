@@ -19,4 +19,4 @@ En este trabajo analizamos datos recogidos en el marco del "Estudio de identific
 
 El objetivo de este trabajo fue proponer, utilizar y adecuar modelos estadísticos capaces de incorporar la complejidad necesaria a la comprensión de la relación de los casos de leptospirose con algunas variables climatológicas de Salvador. Estos modelos llevaron en cuenta la estrutura de dependencia temporal y espacial inherente al problema analizado.
 
-Dos artículos fueron publicados en Tropical Diseases (Ver en [Publicaciones](#projects))  
+Dos artículos fueron publicados en Tropical Diseases (Ver en [Publicaciones](/publication/))  
