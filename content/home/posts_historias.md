@@ -12,7 +12,7 @@ subtitle = "Soluciones Ideales para Desafíos Reales"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "project"
+  page_type = "historia"
   
   # Choose how much pages you would like to display (0 = all pages)
   count = 4
