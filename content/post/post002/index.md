@@ -4,7 +4,7 @@ subtitle: '¿Qué enfoque de analytics debo usar?'
 summary: Breve definición de los tipos de problemas a los que nos enfrentamos y los enfoques que se aplican en cada caso.
 authors:
 - admin
-tags: ["Machine Learning", "Statistics"]
+tags: ["Historia","Machine Learning", "Statistics"]
 categories: ["Machine Learning"]
 date: "2017-04-01T00:00:00Z"
 lastmod: "2017-04-01T00:00:00Z"

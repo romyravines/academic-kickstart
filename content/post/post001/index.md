@@ -4,7 +4,7 @@ subtitle: 'No siempre se puede prescindir de la interpretación de los resultado
 summary: Explicatividad cuando usamos Machine Learning.
 authors:
 - admin
-tags: ["Machine Learning"]
+tags: ["Pildora","Machine Learning"]
 categories: ["R","Machine Learning"]
 date: "2019-04-01T00:00:00Z"
 lastmod: "2019-04-01T00:00:00Z"
