@@ -73,5 +73,8 @@ Ponencia representado a [Innova-tsn](https://www.innova-tsn.com/), uno de los pa
   <p>You don't have a PDF plugin, but you can <a href="/files/20190221_ITSN_SemanaSeguro_CasoTM.pdf">download the PDF file.</a></p>
 </object>
 
+<br>
 
 {{< gallery >}}
+
+<br>

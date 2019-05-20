@@ -68,6 +68,8 @@ email: ""
 #- Visitors
 ---
 
-Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y organizaciones a extraer conocimiento útil de su datos. Mi formación estadística, con enfoque bayesiano, y mi trabajo con machine learning me han permitido tener facilidad para entender y modelizar datos con una visión doble: hypothesis-driven y data-driven.
+Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y organizaciones a extraer conocimiento útil de su datos. Mi formación **estadística**, con **enfoque bayesiano**, y mi trabajo con *machine learning* me han permitido tener facilidad para entender y modelizar datos con una visión doble: _hypothesis-driven_ y _data-driven_.
 
-He tenido la oportunidad de trabajar con líderes en consultoría, de los cuales aprendi habilidades de comunicación. Me dedico a la creación de soluciones basadas en la correcta e innovadora aplicación de la ciencia de datos a problemas empresariales. También participo en acciones formativas y, sobretodo, estoy muy implicada en el desarrollo del talento analítico joven.  
+He tenido la oportunidad de trabajar con líderes en *consultoría analítica*, de los cuales aprendi a identificar la necesidad del negocio, tratar los datos disponibles, seleccionar los modelos y algoritmos adecuados para dar respuesta a las preguntas formuladas y, a comunicar resultados a todo nivel de la organizaciones. 
+
+Me dedico a la creación de soluciones basadas en la correcta e innovadora aplicación de la ciencia de datos a problemas empresariales. Participo activamente en acciones formativas y estoy muy implicada en el desarrollo del talento analítico joven.  

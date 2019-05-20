@@ -4,11 +4,12 @@ summary: Analisis de la Fluctuación de Indicadores Macroeconómicas.
 tags: ["Others"]
 categories: ["Statistics"]
 
-date: "2009-01-01T00:00:00Z"
+date: "2000-01-01T00:00:00Z"
 
 image:
-  caption: ""
-  focal_point: ""
+  caption: "Icons [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/)"
+  focal_point: "Smart"
+  
 ---
 
 Este trabajo fue realizado en 1996 por el Econ. Marcos Robles en una colaboración con el Instituto Nacional de Estadística de Perú. Tuve la suerte de trabajar como asistente de investigación.

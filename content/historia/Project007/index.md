@@ -4,52 +4,52 @@ summary: Naturaleza de las fluctuaciones de los datos económicos.
 tags: ["Others"]
 categories: ["Others"]
 
-date: "2009-05-01T00:00:00Z"
+date: "2000-05-01T00:00:00Z"
 
 image:
-  caption: ""
-  focal_point: ""
+  caption: "Icons [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/)"
+  focal_point: "Smart"
 ---
 
 "Desestacionalización de Series de Tiempo Económicas: Metodología y Aplicación a los Indicadores de Producción y Precios" es el último de los tres títulos en los cuales trabajé como asistente de investigación. bajo la dirección del Econ. Marcos Robles. Fue publicado por el INEI en 1996.
 
 En la publicación se describen las razones, las causas y la naturaleza de las fluctuaciones estacionales de las series de tiempo económicas y se evalúan algunos métodos de ajuste estacional, con el propósito de determinar el más adecuado y luego aplicarlo a series de producción y precios.
 
-Por lo menos existen cuatro *causas*, no necesariamente excluyentes, que generan la estacionalidad:
+Por lo menos existen cuatro **causas**, no necesariamente excluyentes, que generan la estacionalidad:
 
  - las fechas fijadas institucionalmente para realizar ciertas actividades a lo largo del año;
  - el clima o las estaciones del año;
  - las expectativas respecto a las fluctuaciones estacionales y
  - el efecto del número de días hábiles y calendario dentro de un periodo.
 
-Las *características* más importantes de las fluctuaciones estacionales son las siguientes:
+Las **características** más importantes de las fluctuaciones estacionales son las siguientes:
 
  - se repiten cada año con una regularidad más o menos definida,
  - pueden medirse y separarse de las otras fuerzas que influyen en el comportamiento de la serie y
  - son causadas principalmente por fuerzas extraeconómicas.
 
-Las *razones* más importantes para aplicar la desestacionalización de series son:
+Las **razones** más importantes para aplicar la desestacionalización de series son:
 
  - tener una apreciación más clara sobre su comportamiento debido exclusivamente a razones de tipo económico,
  - facilitar la identificación de patrones de comportamiento subyacentes en las series,
  - ayudar a conocer cómo se relacionan las series de interés con otras series (eventos exógenos o variables de política),
  - ayudar a disminuir las posibilidades de ser engañados por correlaciones de ”casualidad” entre series que pueden generarse por influencias estacionales sistemáticas e independientes.
 
-Los *modelos básicos de descomposición* de series son: el aditivo, multiplicativo y aditivo logarítmico. A partir de estos modelos el problema de la desestacionalización consiste en estimar los componentes para cada uno de los periodos de observación.
+Los **modelos básicos de descomposición** de series son: el aditivo, multiplicativo y aditivo logarítmico. A partir de estos modelos el problema de la desestacionalización consiste en estimar los componentes para cada uno de los periodos de observación.
 
-Los *métodos de ajuste estacional* revisados en el trabajo se refieren a los métodos de regresión, métodos que emplean modelos ARIMA y los métodos de promedios móviles (el método simple y el X11-ARIMA).
+Los **métodos de ajuste estacional** revisados en el trabajo se refieren a los métodos de regresión, métodos que emplean modelos ARIMA y los métodos de promedios móviles (el método simple y el X11-ARIMA).
 
 La elección del método más apropiado dependerá del objeto de la desestacionalización:
 
  - se usará uno de tipo econométrico si lo que se busca es utilizar las series ajustadas estacionalmente como insumo de una análisis de regresión,
- - se usará uno que combina los aspectos deterministas de los métodos de regresión con los aspectos dinámicos de los métodos de promedios móviles (por ejemplo, algún componente con regresiones y los otros con promedios móviles) si lo que se busca es el análisis detallado y el pronóstico de una serie específica,
-- se usará el de los promedios móviles si lo que se pretende es tener una apreciación de la tendencia de la serie, sin el componente estacional que la pueda oscurecer,o simplemente presentar las series desestacionalizadas de manera frecuente y masiva.
+ - se usará uno que combina los aspectos deterministas de los métodos de regresión con los aspectos dinámicos de los métodos de promedios móviles (por ejemplo, algún componente con regresiones y los otros con promedios móviles) si lo que se busca es el análisis detallado y el pronóstico de una serie específica, 
+ - se usará el de los promedios móviles si lo que se pretende es tener una apreciación de la tendencia de la serie, sin el componente estacional que la pueda oscurecer,o simplemente presentar las series desestacionalizadas de manera frecuente y masiva.
 
 Una consideración adicional abona en favor de la utilización de métodos como el X11-ARIMA o el de modelos ARIMA: el hecho de que los modelos de regresión tienen el supuesto implícito de estabilidad de los parámetros y por ende la de los factores estacionales, al igual que el método que usa de manera simple los promedios móviles, los cuales en la práctica solo se satisfacen en ocasiones muy raras. El X11-ARIMA es, además, uno de los métodos más conocidos y utilizados para desestacionalizar series en las instituciones de estadística en el mundo.
 
 Para elegir el modelo más adecuado, entre el aditivo (incluido el logarítmico) y el multiplicativo, debería tenerse en consideración lo siguiente: elegir el aditivo si se observa que el componente estacional es constante en el tiempo y el multiplicativo si es creciente o decreciente en el tiempo. Sin embargo, dependiendo de la información de la serie, la elección puede estar en muchos casos predeterminado. Un modelo multiplicativo no podría emplearse para una serie que contenga valores ceros o negativos, al igual que uno logarítmico no podría utilizarse si la serie contiene cifras negativas.
 
-En el trabajo se aplican cuatro métodos de desestacionalización a la serie Indice del *PBI global* (con base 1979=100) correspondiente al periodo enero de 1983 - febrero de 1996: el econométrico de variables dicotómicas, el de modelos ARIMA,el más simple de promedios móviles y el X11-ARIMA.
+En el trabajo se aplican cuatro métodos de desestacionalización a la serie Indice del **PBI global** (con base 1979=100) correspondiente al periodo enero de 1983 - febrero de 1996: el econométrico de variables dicotómicas, el de modelos ARIMA, el más simple de promedios móviles y el X11-ARIMA.
 
 Al final se eligió este último para desestacionalizar a un conjunto más amplio de series debido a las siguientes razones:
 

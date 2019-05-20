@@ -74,5 +74,8 @@ Ponencia representado a [Innova-tsn](https://www.innova-tsn.com/), uno de los pa
 </object>
 
 
+<br>
 
 {{< gallery >}}
+
+<br>

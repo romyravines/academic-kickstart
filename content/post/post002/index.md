@@ -13,9 +13,8 @@ draft: false
 
 # Featured image
 image:
-  caption: ''
-  focal_point: ""
-  preview_only: false
+  caption: "Icons [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/)"
+  focal_point: "Smart"
 
 # Projects (optional).
 projects: []

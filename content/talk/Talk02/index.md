@@ -75,4 +75,8 @@ Ponencia representado a [Innova-tsn](https://www.innova-tsn.com/), uno de los pa
 [*Ver Entrevista posterior a la ponencia*](https://youtu.be/kQhApYWkHaM)
 
 
-{{< gallery >}}
+<br> 
+ 
+ {{< gallery >}} 
+ 
+<br> 
