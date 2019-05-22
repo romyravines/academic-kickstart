@@ -30,7 +30,11 @@ Interpretación de modelos: habilidad para explicar y presentar un modelo en una
 {{% /alert %}}
 
 
-Los modelos de Machine learning son conocidos por su alto poder predictivo, pero no por la facilidad de interpretación de sus resultados. Una regresión logística es un ejemplo modelo interpretable. Un modelo de _gradient boosting machine_ o _gbm_ es un ejemplo donde la interpretación no es trivial. Dada la importancia que tiene, desde la perspectiva de la toma de decisiones de negocio, explicar porque se considera que un cliente va a darse de baja o va a presentar una reclamación, hay un creciente número de publicaciones donde se presentan alternativas para abordar este tema.
+Los modelos de Machine learning son conocidos por su alto poder predictivo, 
+pero no por la facilidad de interpretación de sus resultados. 
+Una regresión logística es un ejemplo de modelo interpretable. 
+Un modelo de _gradient boosting machine_ o _gbm_ es un ejemplo donde la interpretación no es trivial. 
+Dada la importancia que tiene, desde la perspectiva de la toma de decisiones de negocio, explicar por qué se considera que un cliente va a darse de baja o va a presentar una reclamación, hay un creciente número de publicaciones donde se presentan alternativas para abordar este tema.
 
 La figura a continuación ilustra las diferencias en cuanto a interpretabilidad entre un modelo linear, preocupado por entender y prever un comportamiento medio, y un modelo de machine learning, preocupado por capturar todas las relaciones en los datos para garantizar una previsión más precisa. Forma general se puede decir que los modelos lineales son aproximados pero permiten una aproximación exacta, mientras que con machine learning se obtienen modelos muy bien entrenados (exatos) pero difíciles de interpretar.
 

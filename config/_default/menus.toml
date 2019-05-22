@@ -29,10 +29,15 @@
   name = "Experiencia"  # Title of the link.
   url = "experiencia/"  # Widget Page folder name.
   weight = 60  # Position of the link in the navigation bar.
+
+[[main]]
+  name = "RRSS"  # Title of the link.
+  url = "redessociales/"  # Widget Page folder name.
+  weight = 70  # Position of the link in the navigation bar.
   
   
 [[main]]
   name = "Contacto"
   url = "#contact"
-  weight = 70
+  weight = 80
 

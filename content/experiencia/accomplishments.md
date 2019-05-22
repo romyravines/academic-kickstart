@@ -3,9 +3,9 @@
 widget = "accomplishments"  #
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 50  # Order that this section will appear.
+weight = 30  # Order that this section will appear.
 
-title = "Becas & Premios"
+title = "Algunos logros"
 subtitle = ""
 
 # Date format
@@ -20,22 +20,22 @@ date_format = "Jan 2006"
 [[item]]
   organization = "Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)"
   organization_url = "http://www.cnpq.br/"
-  title = "Academic scholarship"
+  title = "Academic scholarship. Financial aid for two years of master studies."
   url = ""
   certificate_url = ""
   date_start = "2001-03-01"
   date_end = "2003-02-01"
-  description = "Financial aid for two years of master studies."
+  description = ""
   
 [[item]]
   organization = "Coordenação de Aperfeiçoamento de Pessoal de Nivel Superior (CAPES)"
   organization_url = "https://www.capes.gov.br/"
-  title = "Academic scholarship"
+  title = "Academic scholarship. Financial aid for four years of doctoral studies."
   url = ""
   certificate_url = ""
   date_start = "2003-03-01"
   date_end = "2006-12-01" 
-  description = "Financial aid for four years of doctoral studies."
+  description = ""
 
 [[item]]
   organization = "Western North American Region of the International Biometric Society (WNAR-ISBA). II Congreso Bayesiano de América Latina (COBAL 2)"
@@ -88,7 +88,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2008-01-01"
   date_end = ""
-  description = "Not used"  
+  description = ""  
  
 
   

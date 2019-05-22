@@ -22,7 +22,7 @@ Empresa farmacéutica requiere conocer la demanda de un determinado medicamento,
 
   - **Pocos datos históricos** ya que se trata de un producto con apenas 18 meses en el mercado. Varias cuentas tienen apenas 3 pedidos en ese periodo.
   - **Demanda intermitente**. Los pedidos no se realizan todos los dias/semanas. Las series temporales tienen muchos ceros (semanas sin pedidos).
-  - No se dispone de la demanda potencial. Los datos sobre el **número de pacientes** que atiende cada cuenta no está disponible.
+  - No se dispone de la demanda potencial. Los datos sobre el **número de pacientes** que atiende cada cuenta no están disponiblen.
   - Poca información de drivers. La acción comercial y actividades de marketing no están 100% alineadas o vinculadas con una cuenta y/o medicina.
   
   
