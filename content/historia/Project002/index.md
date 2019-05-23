@@ -2,7 +2,7 @@
 title: ¿Qué opina El Cliente?
 summary: Analítica de Textos para entender el feedback de los Clientes.
 tags: ["Machine Learning", "Text Mining", "Marketing","Clients"]
-categories: ["Utilities"]
+categories: ["Utilities", "Clients"]
 
 date: "2018-09-01T00:00:00Z"
 

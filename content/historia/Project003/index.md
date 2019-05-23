@@ -1,7 +1,7 @@
 ---
 title: ¿Qué acciones sugiere la segmentación de cliente?
 summary: Segmentación comportamental.
-tags: ["Clients", "Machine Learning", "Analytics", "Segmentation"]
+tags: ["Machine Learning", "Analytics", "Segmentation"]
 categories: ["Marketing","Retail","Clients"]
 
 date: "2011-04-01T00:00:00Z"
@@ -12,17 +12,21 @@ image:
   
 ---
 
-Spanish retail group, leader in department stores. Owing to a new technology, a big amount of information about customers that make use of use the loyalty card is available. The goal was to segment their customers in an actionable way, i.e. in distinct groups according to characteristics that suggest specific marketing actions.
+Grupo de distribución (grandes almacenes), luego de emprender el cambio tecnológico, dispone de una gran cantidad de 
+información de sus clientes que usan la tarjeta de fidelización. Tiene interés en segmentar a sus clientes de forma 
+accionable, es decir, en grupos diferenciados cuyas características comunes sugieran acciones de marketing específicas.
 
 
-## Pregunta
+## Objetivo
 
-....
+Contar con un sistema de segmentación de clientes que permita definir acciones comerciales que aprovechen al 
+máximo el contacto con el cliente, ofreciendo productos, ofertas y/o servicios que sean de su real interés.
+
+
 
 ## Solución
 
-....
-
-## Resultado
-
-....
+ - Formular una **metodología de segmentación** que refleje el comportamiento de los clientes respecto a las dimensiones relevantes del negocio: Fidelidad, Sensibilidad al Surtido, Sensibilidad al Precio, Sensibilidad a la Competencia y Ciclo de Vida del cliente.
+- Sistema de tratamiento y organización de datos para la **creación de métricas** útiles para la segmentación.
+- Sistema de **segmentación multidimensional y dirigida**, 100% accionable que refleje y diferencie los hábitos de consumo y comportamiento de compra de cada grupo.
+- Sistema de **valoración de acciones** por cliente.

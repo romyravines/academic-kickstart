@@ -23,8 +23,9 @@ bio: Entender, Modelizar, Predecir = Aprender y extraer valor de los datos para 
 interests:
 - Estadística Aplicada
 - Machine Learning
-- Econometría
 - Enfoque Bayesiano
+- Inteligencia Artificial
+- Big Data & Cloud
 
 education:
   courses:
@@ -72,4 +73,4 @@ Tengo pasión por la Ciencia de Datos. Dedico mi tiempo a ayudar a personas y or
 
 He tenido la oportunidad de trabajar con líderes en **consultoría analítica**, de los cuales aprendí a identificar las necesidades del negocio, tratar los datos disponibles, seleccionar los modelos y algoritmos adecuados para dar respuesta a las preguntas formuladas y, a comunicar resultados a todos los niveles de las organizaciones. 
 
-Me dedico a la creación de soluciones basadas en la **correcta e innovadora aplicación de la ciencia de datos** a problemas empresariales. Participo activamente en acciones formativas y estoy muy implicada en el desarrollo del talento analítico joven.   
+Me dedico a la creación de soluciones basadas en la **correcta e innovadora aplicación de la ciencia de datos** a problemas empresariales, apoyando la transformación digital y el desarrollo de la inteligencia analítica disruptiva. Participo activamente en acciones formativas y estoy muy implicada en el desarrollo del talento analítico joven.   

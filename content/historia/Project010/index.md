@@ -30,10 +30,10 @@ Empresa farmacéutica requiere conocer la demanda de un determinado medicamento,
 
 Se construye una solución end-to-end con los siguientes módulos:
 
- - Datamart analítico. Conjunto de datos tratados que vinculan varias fuentes de información. Incluye procesos de normalización de datos y recuperación de información a nivel cuenta/cliente.
- - Patrones de compra. Módulo de identificación y caracterización de los patrones de compra trimestral de cada cuenta. Se identifican hasta 7 patrones diferentes, según la curva de "stock".
- - Previsiones de compra. Módulo de modelos de machine learning (gradient boosting machines) que estima modelos y proporciona previsiones de cada cuenta.
- - Herramienta. Módulo con informes que permiten interactuar con el datamart, los patrones de compra y las previsiones a nivel cuenta y en agregaciones predefinidas por el usuario final.
+ - **Datamart analítico**. Conjunto de datos tratados que vinculan varias fuentes de información. Incluye procesos de normalización de datos y recuperación de información a nivel cuenta/cliente.
+ - **Patrones de compra**. Módulo de identificación y caracterización de los patrones de compra trimestral de cada cuenta. Se identifican hasta 7 patrones diferentes, según la curva de "stock".
+ - **Previsiones de compra**. Módulo de modelos de machine learning (gradient boosting machines) que estima modelos y proporciona previsiones de cada cuenta.
+ - **Herramienta**. Módulo con informes que permiten interactuar con el datamart, los patrones de compra y las previsiones a nivel cuenta y en agregaciones predefinidas por el usuario final.
 
 
 ## Resultados

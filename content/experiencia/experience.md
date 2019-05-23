@@ -30,21 +30,23 @@ date_format = "Jan 2006"
 
   
 [[experience]]
-  title = "Profesor Invitado"
+  title = "Colaboración con la academia"
   company = "Varias Instituciones"
   company_url = ""
   location = "Madrid (España)"
-  date_start = "2016-06-01"
+  date_start = "2014-06-01"
   date_end = "2018-06-30"
-  description = """  
-   - **CIFF Business School** (2016, 2017). Master in Big Data and Business Analytics (Curso: Modelos dinámicos y bayesianos: aplicaciones al Marketing).
-   - **EAE Business School** (2017). Máster en Business Intelligence e Innovación Tecnológica (Curso: Análisis de datos y visualización II).
-   - **URJC** (2017, 2018). Máster en Data Science (Masterclass: Marketing & Analítica Avanzada).
+  description = """ 
+   - **UC3M Universidad Carlos III** (2019). Máster en Statistics for Data Science. Masterclass: **Statistics for Data Science from the business perspective in 2019**.
+   - **URJC Universidad Rey Juan Carlos** (2017, 2018). Máster en Data Science. Masterclass: **Marketing & Analítica Avanzada**.
+   - **UAM Universidad Autónoma de Madrid** (2018). Facultad de Ciencias. Departamento de Matemáticas. Masterclass: **Advanced Analytics for the Enterprises**.
+   - **EAE Business School** (2017). Máster en Business Intelligence e Innovación Tecnológica. Curso: **Análisis de datos y visualización II**.
+   - **CIFF Business School** (2016, 2017). Master in Big Data and Business Analytics. Curso: **Modelos dinámicos y bayesianos: aplicaciones al Marketing**.
+   - **ESADE Business School** (2015). Executive Master en Digital Business - EMDB. Masterclass: **Modelación y Previsión**
+   - **UPC Universitat Politécnica de Catalunya** (2014). Master's degree in Statistics and Operations Research. Curso: **Big Data & Statistics**
    """  
   
-  
-  
-  
+ 
 [[experience]]
   title = "Director de Modelación"
   company = "Bayes Forecast"

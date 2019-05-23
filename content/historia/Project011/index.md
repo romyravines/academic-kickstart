@@ -6,28 +6,6 @@ categories: ["Clients", "Utilities"]
 
 date: "2018-12-01T00:00:00Z"
 
-# Set captions for image gallery.
-gallery_item:
-- album: gallery
-  caption: #ML
-  image: Imagen1.png
-- album: gallery
-  caption: #ML
-  image: Imagen2.png
-- album: gallery
-  caption: #ML
-  image: Imagen3.png
-- album: gallery
-  caption: #ML
-  image: Imagen4.png
-- album: gallery
-  caption: #ML
-  image: Imagen5.png
-- album: gallery
-  caption: #ML
-  image: Imagen6.png
-
-
 image:
   caption: "Icons [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/)"
   focal_point: "Smart"
@@ -44,10 +22,10 @@ Empresa del sector de energía va a aumentar su presupuesto en acciones de reten
 
 ## Desafíos
 
-  - Baja tasa de clientes que se dan de baja cada mes (menos de 0.5%).
-  - Debido a los procesos de actualización de datos en los sistemas internos, la propensión a la baja debe estimarse con al menos dos meses de anticipación. 
+  - **Baja tasa** de clientes que se dan de baja cada mes (menos de 0.5%).
+  - Debido a los procesos de actualización de datos en los sistemas internos, la propensión a la baja debe estimarse con al menos **dos meses de anticipación**. 
   - Los datos de la competencia no están disponibles.
-  - Cambios en la legislación del sector han provocado cambio en el comportamiento de clientes respecto al churn, dejando poco histórico de la nueva situación.
+  - **Cambios en la legislación** del sector han provocado cambio en el comportamiento de clientes respecto al churn, dejando poco histórico de la nueva situación.
   
 
 
