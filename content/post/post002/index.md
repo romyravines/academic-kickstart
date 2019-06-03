@@ -6,8 +6,8 @@ authors:
 - admin
 tags: ["Historia","Machine Learning", "Statistics"]
 categories: ["Machine Learning"]
-date: "2017-04-01T00:00:00Z"
-lastmod: "2017-04-01T00:00:00Z"
+date: "2018-12-01T00:00:00Z"
+lastmod: "2018-12-01T00:00:00Z"
 featured: false
 draft: false
 

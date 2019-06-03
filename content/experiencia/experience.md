@@ -17,6 +17,7 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
   title = "Advanced Analytics Senior Manager"
   company = "Innova-tsn"
@@ -27,16 +28,17 @@ date_format = "Jan 2006"
   description = """ Innova-tsn construye soluciones personalizadas y ofrece ideas nuevas e innovadoras con un objetivo claro: brindar a los Clientes ventajas competitivas para ayudarles en sus decisiones. En otras palabras, Innova-tsn ayuda a las empresas en sus procesos de toma de decisiones, a convertir las decisiones en acciones con un impacto real en sus resultados. Innova-tsn ofrece soluciones completas y orientadas a objetivos en las áreas de arquitectura de sistemas, ingeniería de datos, inteligencia de clientes, _business discovery_ y _advanced analytics_.
 
   """
-
   
 [[experience]]
   title = "Colaboración con la academia"
   company = "Varias Instituciones"
-  company_url = ""
-  location = "Madrid (España)"
+  company_url = " "
+  location = "España"
   date_start = "2014-06-01"
-  date_end = "2018-06-30"
-  description = """ 
+  date_end = ""
+  description = """
+  
+   - **URJC Universidad Rey Juan Carlos** (2019). Máster en Data Science. Masterclass: **Analítica Predictiva y Teorema de Bayes**  
    - **UC3M Universidad Carlos III** (2019). Máster en Statistics for Data Science. Masterclass: **Statistics for Data Science from the business perspective in 2019**.
    - **URJC Universidad Rey Juan Carlos** (2017, 2018). Máster en Data Science. Masterclass: **Marketing & Analítica Avanzada**.
    - **UAM Universidad Autónoma de Madrid** (2018). Facultad de Ciencias. Departamento de Matemáticas. Masterclass: **Advanced Analytics for the Enterprises**.

@@ -6,8 +6,8 @@ authors:
 - admin
 tags: ["Pildora","Machine Learning"]
 categories: ["R","Machine Learning"]
-date: "2019-04-01T00:00:00Z"
-lastmod: "2019-04-01T00:00:00Z"
+date: "2019-05-01T00:00:00Z"
+lastmod: "2019-05-01T00:00:00Z"
 featured: false
 draft: false
 
